@@ -1,0 +1,22 @@
+extends ../template
+
+block variables
+    - var title = 'Home page'
+    - var bodyFlex = false
+
+block content
+
+    include ../common/header
+
+    +b.MAIN.main.wrp(class=bodyFlex ? 'main-flex' : '')
+        span main
+        form.form
+            input.input(type='text' placeholder='e-mail')
+            button.button нажать
+
+
+    include ../common/footer
+
+
+
+

@@ -1,0 +1,95 @@
+$browser-context: 16 // Default
+
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+*::selection
+  background: rgba($main-col,.93)
+  color: white
+
+html
+  text-size-adjust: none
+
+body
+  +main-font
+  position: relative
+  min-width: 320px
+  font-size: 16px
+  color: $font-col
+
+main
+  position: relative
+
+a
+  +tr
+  display: inline-block
+  color: $font-col
+  &:hover
+    color: $main-col
+    text-decoration: none
+
+h1, h2, h3, h4, h5
+  color: #000
+  font-weight: 500
+h1
+  font-size: 40px
+h2
+  font-size: 30px
+h3
+  font-size: 24px
+h4
+  font-size: 18px
+h5
+  font-size: 16px
+
+// forms
+
+form
+  background: $main-col
+
+input, button
+  +main-font
+  font-weight: bold
+  font-size: 14px
+  text-transform: uppercase
+  letter-spacing: 2px
+  outline: none
+
+
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+button
+
+  color: #fff
+  background: transparent
+  border: solid 2px $form-border
+
+button
+  color: $main-col
+  background: #fff
+  border: none
+  outline: none
+  cursor: pointer
+
+=placeholder-color($color)
+  &::-webkit-input-placeholder  /* WebKit browsers */
+      color: $color
+      opacity: .8
+  &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+      color: $color
+      opacity: .8
+  &::-moz-placeholder  /* Mozilla Firefox 19+ */
+      color: $color
+      opacity: .8
+  &:-ms-input-placeholder  /* Internet Explorer 10+ */
+      color: $color
+      opacity: .8
+
++placeholder-color(#fff)
