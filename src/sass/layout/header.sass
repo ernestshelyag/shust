@@ -1,2 +1,73 @@
 .header
-  background: #cacaca
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  margin: auto
+
+.header-top
+  padding: 0 75px
+  max-width: 1920px
+  margin: 0 auto
+  &__nav-block
+    height: 62px
+    border-bottom: solid 1px #E8EEEE
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding-bottom: 20px
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: 700
+  &__nav
+    width: 1060px
+    display: flex
+    justify-content: space-between
+  &__nav-link
+    color: #000
+    text-decoration: none
+  &__enter
+    color: $main-col
+    cursor: pointer
+    transition: color .3s ease
+    &:hover
+      color: $main-col-dark
+
+  // - - - - -
+
+  &__info-block
+    height: 105px
+    display: flex
+    .layout-info
+      flex-grow: 1
+
+// - - - - -
+
+.header-bottom
+  background: $main-col
+  &__nav
+    height: 52px
+    max-width: 1920px
+    margin: 0 auto
+  &__link
+    width: 25%
+    height: 100%
+    border-left: solid 1px $form-border
+    text-align: center
+    line-height: 52px
+    font-weight: 400
+    font-size: 16px
+    text-transform: uppercase
+    letter-spacing: 3px
+    color: #fff
+    text-decoration: none
+    &:first-child
+      border-left: none
+    &:hover
+      color: #fff
+      background: $main-col-med
+    &.active
+      background: $main-col-dark
+      border-left: none
+      & + a
+        border-left: none

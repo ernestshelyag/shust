@@ -6,17 +6,12 @@ block variables
 
 block content
 
-    include ../common/header
+    include ../layout/header
 
-    +b.MAIN.main.wrp(class=bodyFlex ? 'main-flex' : '')
-        span main
-        form.form
-            input.input(type='text' placeholder='e-mail')
-            button.button нажать
-
-
-    include ../common/footer
+    +b.MAIN.main(class=bodyFlex ? 'main-flex' : '')
+        div.wrp(style="background: red;") test
 
 
 
 
+    include ../layout/footer

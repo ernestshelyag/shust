@@ -1,0 +1,73 @@
+.logo-block
+  width: 313px
+  display: flex
+  align-items: center
+  text-decoration: none
+  margin-right: 85px
+  .logo
+    width: 62px
+    height: 36px
+  &__info
+    display: flex
+    flex-direction: column
+    padding-left: 26px
+  &__name
+    font-size: 22px
+    font-weight: 500
+    color: $main-col
+    text-transform: uppercase
+    letter-spacing: 2.5px
+    white-space: nowrap
+    padding-bottom: 5px
+
+// - - - - -
+
+.layout-info
+  height: 100%
+  &__list
+    height: 100%
+    +flex
+  &__item_socials
+    width: 92px
+    +flex
+    svg
+      width: 21px
+      height: 21px
+      fill: $main-col
+      &:hover
+        fill: $main-col-dark
+  &__link
+    display: flex
+    text-decoration: none
+    svg
+      fill: $font-col
+      height: 33px
+    .mark
+      width: 26px
+    .plane
+      width: 36px
+    .skype
+      width: 33px
+    .phone
+      width: 34px
+    &:hover
+      svg
+        fill: $main-col
+      .mark
+        fill: $font-col
+
+  &__text-block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-left: 20px
+    height: 33px
+  &__title
+    font-size: 12px
+    text-transform: uppercase
+  &__text
+    color: #000
+    &_phone
+      line-height: 33px
+      font-weight: 500
+      font-size: 20px

@@ -5,9 +5,9 @@
     
 ##Other commands
 
-    ncu -u
+    ncu -a
     
-To npm update packages (before ` npm i `). Need preinstalled npm-check-updates (` npm i -g npm-check-updates `).
+To update npm packages (before ` npm i `). Need preinstalled npm-check-updates (` npm i -g npm-check-updates `).
     
 ##About
 

@@ -1,14 +1,14 @@
 extends ../template
 
 block variables
-    - var title = 'About'
+    - var title = '404'
     - var bodyFlex = true
 
 block content
 
     include ../layout/header
 
-    +b.MAIN.about(class=bodyFlex ? 'main-flex' : '')
-        span about
+    +b.MAIN.err404(class=bodyFlex ? 'main-flex' : '')
+        span 404
 
     include ../layout/footer

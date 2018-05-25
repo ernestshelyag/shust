@@ -5,6 +5,5 @@ $(window).on('load', function () {
 
 $( function () {
   heroSlider();
+  phone();
 });
-
-console.log('test');

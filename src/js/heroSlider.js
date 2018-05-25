@@ -1,8 +1,4 @@
 function heroSlider(){
-  let test = () => {
-    console.log('test3');
-  };
-  test();
   // $('.hero-slider').slick({
   //   slidesToShow: 4,
   //   slidesToScroll: 1,
@@ -26,5 +22,3 @@ function heroSlider(){
   //   ]
   // });
 }
-
-console.log('test2');
