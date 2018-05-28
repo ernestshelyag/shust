@@ -1,0 +1,73 @@
+.hero-slider
+  position: relative
+
+  // dots
+
+  &__dots
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 75px
+    z-index: 10
+    .slick-dots
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+    li
+      +psevdo
+      &:before
+        border-radius: 50px
+        width: 7px
+        height: 7px
+        background: $font-col
+        +zero
+        +tr
+      &.slick-active:before
+        width: 12px
+        height: 12px
+        background: $main-col
+        box-shadow: 0px 3px 5px 0 rgba(47, 204, 198, 0.3)
+    button
+      width: 30px
+      height: 30px
+      font-size: 0
+
+  // arrs...
+
+// text-slide
+
+.hero-slider-text
+  position: absolute
+  z-index: 5
+  width: 496px
+  top: 50%
+  left: 289px
+  transform: translate(0, -50%)
+  &__slide
+    padding: 0 20px
+  &__title
+    margin-bottom: 39px
+  &__text
+    font-size: 18px
+    line-height: 1.44
+    margin-bottom: 39px
+
+// img-slide
+
+.hero-slider-img
+  &__slide
+    height: 754px
+    position: relative
+  &__mask
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-image: linear-gradient(280deg,transparent, transparent, #f5fafa, #f5fafa, #f5fafa)
+  &__img
+    height: 100%
+    min-width: 1166px
+    float: right
+    object-fit: cover

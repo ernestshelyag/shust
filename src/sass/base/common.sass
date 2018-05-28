@@ -1,23 +1,83 @@
-// wrapper
+*
+  outline: none
 
-=wrp
-  max-width: 1340px
-  margin: 0 auto
-  padding: 0 40px
-  +r($tablet)
-    max-width: 688px
-    padding: 0
-.wrp
-  +wrp
+// forms
 
-// body-flex (footer to bottom)
+form
+  background: $main-col
 
-.body-flex
-  display: flex
-  flex-direction: column
-  min-height: 100vh
+.form-btn, .form-inp
+  font-weight: bold
+  font-size: 14px
+  text-transform: uppercase
+  border-radius: 50px
+  width: 100%
+  letter-spacing: 3px
 
-.main-flex
-  flex-grow: 1
+.form-btn
+  color: $main-col
+  background: #fff
+  text-align: center
+  padding: 22px 0
 
-// - - - - -
+.form-inp
+  color: #fff
+  padding: 22px 10px 22px 50px
+  border: solid 2px $form-border
+
+// titles
+
+h1, h2, h3, h4, h5
+  color: #000
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: .15em
+  line-height: 1.1
+h1
+  font-size: 40px
+h2
+  font-size: 30px
+h3
+  font-size: 24px
+h4
+  font-size: 18px
+h5
+  font-size: 16px
+
+// elements
+
+main
+  margin-top: 219px
+
+body
+  letter-spacing: 2px
+
+svg
+  transition: fill .3s ease
+
+.btn
+  width: 338px
+  padding: 24px 0 23px 46px
+  border: solid 2px $main-col
+  border-radius: 50px
+  font-size: 14px
+  color: #000
+  text-transform: uppercase
+  font-weight: bold
+  position: relative
+  cursor: pointer
+  svg
+    width: 18px
+    height: 13px
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+    right: 34px
+
+// temp
+//
+//.header
+//  display: none
+//main
+//  margin-top: 0

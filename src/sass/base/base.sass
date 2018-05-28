@@ -20,11 +20,9 @@ body
   min-width: 320px
   font-size: 16px
   color: $font-col
-  letter-spacing: 2px
 
 main
   position: relative
-  margin-top: 219px
 
 a
   +tr
@@ -34,71 +32,51 @@ a
     color: $main-col
     text-decoration: none
 
-svg
-  transition: fill .3s ease
-
-h1, h2, h3, h4, h5
-  color: #000
-  font-weight: 500
-  text-transform: uppercase
-  letter-spacing: .2em
-h1
-  font-size: 40px
-h2
-  font-size: 30px
-h3
-  font-size: 24px
-h4
-  font-size: 18px
-h5
-  font-size: 16px
-
 // forms
-
-form
-  background: $main-col
 
 input, button
   +main-font
-  font-weight: bold
-  font-size: 14px
-  text-transform: uppercase
   outline: none
-  border-radius: 50px
-  width: 100%
-  letter-spacing: 3px
-
-input[type=text],
-input[type=email],
-input[type=password]
-  padding: 22px 10px 22px 50px
-
-input
-  color: #fff
+  border: none
   background: transparent
-  border: solid 2px $form-border
 
 button
-  color: $main-col
-  background: #fff
-  border: none
-  outline: none
   cursor: pointer
-  text-align: center
-  padding: 22px 0
 
-=placeholder-color($color)
+=placeholder-color($color, $opacity)
   &::-webkit-input-placeholder  /* WebKit browsers */
       color: $color
-      opacity: .8
+      opacity: $opacity
   &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
       color: $color
-      opacity: .8
+      opacity: $opacity
   &::-moz-placeholder  /* Mozilla Firefox 19+ */
       color: $color
-      opacity: .8
+      opacity: $opacity
   &:-ms-input-placeholder  /* Internet Explorer 10+ */
       color: $color
-      opacity: .8
+      opacity: $opacity
 
-+placeholder-color(#fff)
++placeholder-color(#fff, 0.8)
+
+// wrapper
+
+=wrp
+  max-width: 1340px
+  margin: 0 auto
+  padding: 0 40px
+  +r($tablet)
+    max-width: 688px
+    padding: 0
+.wrp
+  +wrp
+
+// body-flex (footer to bottom)
+
+.body-flex
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+.main-flex
+  flex-grow: 1

@@ -2,7 +2,7 @@
 
 module.exports = function () {
   $.gulp.task('scripts', function () {
-    return $.gulp.src($.config.js + '*.js')
+    return $.gulp.src($.config.src + '**/*.js')
       .pipe($.gp.plumber({
         errorHandler: $.gp.notify.onError(function (err) {
           return {
@@ -12,7 +12,7 @@ module.exports = function () {
         })
       }))
       .pipe($.gp.concat('main.min.js'))
-      //.pipe($.gp.uglify())
+      .pipe($.gp.uglify())
       .pipe($.gulp.dest($.config.root + 'js/'));
   });
 };

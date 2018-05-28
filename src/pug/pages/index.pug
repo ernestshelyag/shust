@@ -9,9 +9,9 @@ block content
     include ../layout/header
 
     +b.MAIN.main(class=bodyFlex ? 'main-flex' : '')
-        div.wrp(style="background: red;") test
-
-
-
+        include ../../components/hero-slider/hero-slider
+        include ../../components/info/info
+        include ../../components/callback/callback
+        include ../../components/work-with/work-with
 
     include ../layout/footer

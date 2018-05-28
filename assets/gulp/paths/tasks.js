@@ -5,7 +5,7 @@ module.exports = [
   './assets/gulp/tasks/sass.js',
   './assets/gulp/tasks/clean.js',
   './assets/gulp/tasks/watch.js',
-  './assets/gulp/tasks/copyStatics.js',
+  './assets/gulp/tasks/copyStatic.js',
   './assets/gulp/tasks/browserSync.js',
   './assets/gulp/tasks/scripts.js',
   './assets/gulp/tasks/js.vendors.js',

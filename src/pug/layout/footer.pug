@@ -1,16 +1,15 @@
 +b.FOOTER.footer
 
-    +b.DIV.footer-top
+    +b.DIV.callback
         +e.DIV.wrp.wrp
             +e.DIV.text-block
                 +e.SPAN.title Остались вопросы? Задайте вопросы нашему менеджеру
                 +e.SPAN.text Вам перезвонят в течение 2 минут
             +e.FORM.form
-                +e.INPUT.input(type="text" name="phone" placeholder="Ваш телефон")
-                +e.BUTTON.button(type="submit") Отправить
+                +e.INPUT.input.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+                +e.BUTTON.button.form-btn(type="submit") Отправить
 
-    +b.DIV.footer-bottom
-
+    +e.DIV.footer-bottom
         +e.DIV.links-block
             +b.A.logo-block(href="404.html")
                 +icon("logo", "sprite")
