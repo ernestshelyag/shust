@@ -1,2 +1,28 @@
 .err404
-  color: red
+  min-height: 580px
+  text-align: center
+  position: relative
+  &__bg
+    position: absolute
+    width: 100%
+    bottom: 0
+    height: 60%
+    left: 0
+    background: #F2FAFA
+  &__cont
+    +vcenter
+  &__err
+    color: $main-col
+    font-size: 300px
+    span
+      &:nth-child(2)
+        color: $main-col-dark
+        padding: 0 50px
+  &__title
+    margin-bottom: 30px
+  &__text
+    a
+      color: $main-col
+      text-decoration: underline
+      padding: 0 5px
+

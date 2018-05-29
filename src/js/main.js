@@ -7,4 +7,5 @@ $(function () {
   heroSlider();
   phone();
   workWithSlider();
+  reviewSliders();
 });
