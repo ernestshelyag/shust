@@ -2,13 +2,24 @@ extends ../template
 
 block variables
     - var title = 'About'
-    - var bodyFlex = true
+    - var bodyFlex = false
 
 block content
 
     include ../layout/header
 
     +b.MAIN.about(class=bodyFlex ? 'main-flex' : '')
-        span about
+        +e.DIV.title-block
+            +e.DIV.title-cont.wrp
+                +b.DIV.breadcrumbs
+                    a(href="/") Главная
+                    span /
+                    a Обо мне
+                +e.H1.title Обо мне
+
+        include ../../components/peson/person
+        include ../../components/callback/callback
+        include ../../components/cells/cells
+        include  ../../components/diplom-slider/diplom-slider
 
     include ../layout/footer

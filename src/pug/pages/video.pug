@@ -11,8 +11,8 @@ block content
             +e.DIV.nav-block
                 +e.NAV.nav
                     +e.A.nav-link(href="#") Цены
-                    +e.A.nav-link(href="#") Обо мне
-                    +e.A.nav-link(href="#") Отзывы
+                    +e.A.nav-link(href="about.html") Обо мне
+                    +e.A.nav-link(href="review-page.html") Отзывы
                     +e.A.nav-link(href="#") Частые вопросы
                     +e.A.nav-link(href="#") Полезные статьи
                     +e.A.nav-link(href="#") Студентам
@@ -51,12 +51,42 @@ block content
                                     +e.SPAN.text_phone +7 (926)724-45-54
         +b.DIV.header-bottom
             +e.NAV.nav
-                +e.A.link(href="#") Сеансы
-                +e.A.link(href="#") Как проходят сеансы
-                +e.A.link(href="#") Разновидности гипноза
-                +e.A.link.active(href="#") Видео
+                +e.A.link(href="session.html") Сеансы
+                +e.A.link(href="about-session.html") Как проходят сеансы
+                +e.A.link(href="hypnosis.html") Разновидности гипноза
+                +e.A.link.active(href="video.html") Видео
+
+    // header end
 
     +b.MAIN.video(class=bodyFlex ? 'main-flex' : '')
-        span ass
+        +e.DIV.cont.wrp
+            +b.DIV.breadcrumbs
+                a(href="/") Главная
+                span /
+                a Видео
+            +e.H1.title Видео
+            +e.UL.list
+                +e.LI.item
+                    +e.DIV.img-block
+                        +e.IMG.img(src="img/video.jpg")
+                        +e.A.btn.btn-play
+                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
+                +e.LI.item
+                    +e.DIV.img-block
+                        +e.IMG.img(src="img/video.jpg")
+                        +e.A.btn.btn-play
+                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
+                +e.LI.item
+                    +e.DIV.img-block
+                        +e.IMG.img(src="img/video.jpg")
+                        +e.A.btn.btn-play
+                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
+                +e.LI.item
+                    +e.DIV.img-block
+                        +e.IMG.img(src="img/video.jpg")
+                        +e.A.btn.btn-play
+                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
+            +e.DIV.btn-block
+                +e.A.btn-load.btn Загрузить еще
 
     include ../layout/footer
