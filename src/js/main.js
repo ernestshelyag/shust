@@ -4,9 +4,11 @@ $(window).on('load', function () {
 });
 
 $(function () {
+  header();
   heroSlider();
   phone();
   workWithSlider();
   reviewSliders();
   diplomSlider();
+  modals();
 });

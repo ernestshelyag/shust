@@ -1,0 +1,67 @@
+extends ../template
+
+block variables
+    - var title = 'Articles'
+    - var bodyFlex = false
+
+block content
+
+    include ../layout/header
+
+    +b.MAIN.articles-page(class=bodyFlex ? 'main-flex' : '')
+
+        +b.SECTION.articles.wrp
+            +e.DIV.cont
+                +b.DIV.breadcrumbs
+                    a(href="/") Главная
+                    span /
+                    a Полезные статьи
+                +e.DIV.title-block
+                    +e.H1.title Полезные статьи
+                +e.UL.list
+                    +e.LI.item
+                        +e.A.art-link(href="single-article.html")
+                            +e.IMG.img(src="img/group.jpg")
+                        +e.DIV.text-block
+                            +e.A.art-link(href="single-article.html")
+                                +e.H5.lil-title Влияние аффекта на семантическую организацию значений
+                            +e.SPAN.date 2 Апреля
+                    +e.LI.item
+                        +e.A.art-link(href="single-article.html")
+                            +e.IMG.img(src="img/group.jpg")
+                        +e.DIV.text-block
+                            +e.A.art-link(href="single-article.html")
+                                +e.H5.lil-title Влияние аффекта на семантическую организацию значений
+                            +e.SPAN.date 2 Апреля
+                    +e.LI.item
+                        +e.A.art-link(href="single-article.html")
+                            +e.IMG.img(src="img/group.jpg")
+                        +e.DIV.text-block
+                            +e.A.art-link(href="single-article.html")
+                                +e.H5.lil-title Влияние аффекта на семантическую организацию значений
+                            +e.SPAN.date 2 Апреля
+                    +e.LI.item
+                        +e.A.art-link(href="single-article.html")
+                            +e.IMG.img(src="img/group.jpg")
+                        +e.DIV.text-block
+                            +e.A.art-link(href="single-article.html")
+                                +e.H5.lil-title Влияние аффекта на семантическую организацию значений
+                            +e.SPAN.date 2 Апреля
+                    +e.LI.item
+                        +e.A.art-link(href="single-article.html")
+                            +e.IMG.img(src="img/group.jpg")
+                        +e.DIV.text-block
+                            +e.A.art-link(href="single-article.html")
+                                +e.H5.lil-title Влияние аффекта на семантическую организацию значений
+                            +e.SPAN.date 2 Апреля
+                    +e.LI.item
+                        +e.A.art-link(href="single-article.html")
+                            +e.IMG.img(src="img/group.jpg")
+                        +e.DIV.text-block
+                            +e.A.art-link(href="single-article.html")
+                                +e.H5.lil-title Влияние аффекта на семантическую организацию значений
+                            +e.SPAN.date 2 Апреля
+                +e.DIV.btn-block
+                    +e.A.btn-load.btn Загрузить еще
+
+    include ../layout/footer

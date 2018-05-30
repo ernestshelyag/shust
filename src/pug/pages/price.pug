@@ -1,0 +1,81 @@
+extends ../template
+
+block variables
+    - var title = 'Price'
+    - var bodyFlex = true
+
+block content
+
+    include ../layout/header
+
+    +b.MAIN.price(class=bodyFlex ? 'main-flex' : '')
+        +e.DIV.top-block.wrp
+            +b.DIV.breadcrumbs
+                a(href="/") Главная
+                span /
+                a Цены
+            +e.H1.title Цены
+            +e.DIV.info-block
+                +e.P.text
+                    | Перед оплатой курса необходимо пройти первичную консультативную встречу длительностью 1-1.5 ч. Стоимость первой встречи
+                    span 10 000 рублей
+                +e.A.top-btn.btn Записаться
+                    +icon("arr-next", "sprite")
+        +e.DIV.price-block
+            +e.UL.list.wrp
+                +b.LI.price-item
+                    +e.H4.title Индивидуальные сеансы
+                    +e.DIV.block
+                        +e.DIV.lev
+                            +e.SPAN.text 1-4 сеанса
+                            +e.SPAN.price 20 000 руб
+                        +e.DIV.lev
+                            +e.SPAN.text 5-8 сеансов
+                            +e.SPAN.price 15 000 руб
+                        +e.DIV.lev
+                            +e.SPAN.text 9-12 сеансов
+                            +e.SPAN.price 10 000 руб
+                    +e.DIV.bottom
+                        +e.SPAN.total-price 180 000 руб
+                        +e.A.btn.btn-dark записаться
+                +b.LI.price-item
+                    +e.H4.title Групповые сеансы
+                    +e.DIV.block
+                        +e.DIV.lev
+                            +e.SPAN.text более чем за 7 дней
+                            +e.SPAN.price 36 000 руб
+                        +e.DIV.lev
+                            +e.SPAN.text более чем за 20 дней
+                            +e.SPAN.price 30 000 руб
+                    +e.DIV.bottom
+                        +e.SPAN.total-price 40 000 руб
+                        +e.A.btn.btn-dark записаться
+                +b.LI.price-item
+                    +e.H4.title Психодиагностика
+                    +e.DIV.block
+                        +e.DIV.lev
+                            +e.SPAN.text 1-4 сеанса
+                            +e.SPAN.price 20 000 руб
+                        +e.DIV.lev
+                            +e.SPAN.text 5-8 сеансов
+                            +e.SPAN.price 15 000 руб
+                        +e.DIV.lev
+                            +e.SPAN.text 9-12 сеансов
+                            +e.SPAN.price 10 000 руб
+                    +e.DIV.bottom
+                        +e.SPAN.total-price 10 000 руб
+                        +e.A.btn.btn-dark записаться
+                +b.LI.price-item
+                    +e.H4.title Научные лекции
+                    +e.DIV.block
+                        +e.DIV.lev
+                            +e.SPAN.text более чем за 7 дней
+                            +e.SPAN.price 36 000 руб
+                        +e.DIV.lev
+                            +e.SPAN.text более чем за 20 дней
+                            +e.SPAN.price 30 000 руб
+                    +e.DIV.bottom
+                        +e.SPAN.total-price 40 000 руб
+                        +e.A.btn.btn-dark записаться
+
+    include ../layout/footer

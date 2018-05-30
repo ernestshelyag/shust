@@ -49,6 +49,7 @@ h5
 .arr-next, .arr-prev
   width: 18px
   height: 13px
+  fill: $main-col
 
 // breadcrumbs
 
@@ -93,6 +94,8 @@ p
   &:hover
     background: $main-col
     color: #fff
+    svg
+      fill: #fff
   svg
     width: 18px
     height: 13px
@@ -101,6 +104,22 @@ p
     bottom: 0
     margin: auto
     right: 34px
+    fill: $main-col
+
+.btn-dark
+  padding: 24px 0 23px
+  text-align: center
+  border-radius: 50px
+  font-size: 14px
+  background: $main-col
+  color: #fff
+  text-transform: uppercase
+  font-weight: bold
+  cursor: pointer
+  text-decoration: none
+  &:hover
+    background: $main-col-med
+    color: #fff
 
 .btn-play
   width: 60px

@@ -1,0 +1,42 @@
++b.DIV.modal#modal-enter
+    +e.cont
+        +e.FORM.box
+            +e.A.close-btn
+                +icon("cancel", "sprite")
+            +e.SPAN.title Войти
+            +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
+            +e.INPUT.input.form-inp(type="password" placeholder="пароль")
+            +e.BUTTON.button.form-btn(type="submit") Войти
+            +e.A.reg#reg регистрация
+
++b.DIV.modal#modal-reg
+    +e.DIV.cont
+        +e.FORM.box
+            +e.A.close-btn
+                +icon("cancel", "sprite")
+            +e.SPAN.title Регистрация
+            +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
+            +e.INPUT.input.form-inp(type="password" placeholder="пароль")
+            +e.BUTTON.button.form-btn(type="submit") Зарегестрироваться
+
++b.DIV.modal#modal-success
+    +e.DIV.cont
+        +e.DIV.box
+            +e.A.close-btn
+                +icon("cancel", "sprite")
+            +e.SPAN.title Ваша заявка принята
+            +e.SPAN.text
+                | Вам перезвонят в
+                br
+                | течении 2 минут
+
++b.DIV.modal#modal-appointment
+    +e.DIV.cont
+        +e.FORM.box
+            +e.A.close-btn
+                +icon("cancel", "sprite")
+            +e.SPAN.title Записаться
+            input(type="hidden" value="individual")
+            +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
+            +e.INPUT.input.form-inp(type="password" placeholder="пароль")
+            +e.BUTTON.button.form-btn(type="submit") Записаться

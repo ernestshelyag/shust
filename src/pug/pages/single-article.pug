@@ -1,0 +1,53 @@
+extends ../template
+
+block variables
+    - var title = 'Article'
+    - var bodyFlex = false
+
+block content
+
+    include ../layout/header
+
+    +b.MAIN.single-article(class=bodyFlex ? 'main-flex' : '')
+        +e.DIV.top-block.wrp
+            +b.DIV.breadcrumbs
+                a(href="/") Главная
+                span /
+                a(href="articles-page.html") Полезные статьи
+                span /
+                a Влияние аффекта на семантическую организацию значений
+            +e.H1.title Влияние аффекта на семантическую организацию значений
+        +e.IMG.img(src="img/article.jpg")
+        +e.DIV.info-block.wrp
+            +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut blanditiis consequatur ea eveniet ex excepturi fugiat, illo in itaque magnam, magni minima molestiae molestias mollitia necessitatibus non qui quidem reiciendis repellendus reprehenderit repudiandae sit soluta tempora, ullam voluptate voluptatem voluptatibus? Deleniti distinctio et ipsa officiis possimus. Ad aliquam animi aperiam assumenda at atque corporis, doloremque eius enim eos facere fugiat laboriosam laborum libero maiores, mollitia non optio provident quam quasi quisquam quod ratione reiciendis reprehenderit temporibus unde voluptatibus voluptatum. Aliquam atque autem blanditiis consequatur debitis dolorem doloribus ducimus illo, ipsa, labore minima modi necessitatibus quae sed sint vel velit.
+            +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque debitis facere, numquam quasi unde voluptate. Aut commodi culpa deserunt ducimus laudantium magnam quas quo rem ut! Dolorem exercitationem, ipsam.
+            +e.H2.art-title Маркированный список
+            +e.UL.mark-list
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+            +e.H2.art-title Нумерованный список
+            +e.OL.num-list
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+                +e.LI.item
+                    +e.SPAN.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, recusandae!
+            +e.DIV.quote-block
+                +icon("quotes", "sprite")
+                +e.H3.quote-title Цитата
+                +e.P.quote-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut beatae cumque distinctio dolore excepturi fugiat in laboriosam magni, mollitia nesciunt, obcaecati odio porro quae quisquam sit vitae voluptate. Ad aut eius maxime reprehenderit suscipit? Dolorem ipsam natus necessitatibus quam quibusdam. Blanditiis dolores eaque, et hic ipsum nihil perspiciatis voluptas.
+
+    include ../layout/footer

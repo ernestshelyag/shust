@@ -32,7 +32,7 @@
     <header class="header">
       <div class="header-top">
         <div class="header-top__nav-block">
-          <nav class="header-top__nav"><a class="header-top__nav-link" href="#">Цены</a><a class="header-top__nav-link" href="about.html">Обо мне</a><a class="header-top__nav-link" href="review-page.html">Отзывы</a><a class="header-top__nav-link" href="#">Частые вопросы</a><a class="header-top__nav-link" href="#">Полезные статьи</a><a class="header-top__nav-link" href="#">Студентам</a><a class="header-top__nav-link" href="#">Контакты</a>
+          <nav class="header-top__nav"><a class="header-top__nav-link" href="price.html">Цены</a><a class="header-top__nav-link" href="about.html">Обо мне</a><a class="header-top__nav-link" href="review-page.html">Отзывы</a><a class="header-top__nav-link" href="#">Частые вопросы</a><a class="header-top__nav-link" href="articles-page.html">Полезные статьи</a><a class="header-top__nav-link" href="#">Студентам</a><a class="header-top__nav-link" href="#">Контакты</a>
           </nav><span class="header-top__enter" id="enter">Войти</span>
         </div>
         <div class="header-top__info-block"><a class="logo-block" href="/">
@@ -270,9 +270,9 @@
             </div>
             <div class="footer__link-col"><a class="footer__link" href="#">Студентам</a><a class="footer__link" href="#">Тестирование</a><a class="footer__link" href="video.html">Видео</a>
             </div>
-            <div class="footer__link-col"><a class="footer__link" href="#">Цены</a><a class="footer__link" href="about.html">Обо мне</a><a class="footer__link" href="review-page.html">Отзывы</a>
+            <div class="footer__link-col"><a class="footer__link" href="price.html">Цены</a><a class="footer__link" href="about.html">Обо мне</a><a class="footer__link" href="review-page.html">Отзывы</a>
             </div>
-            <div class="footer__link-col"><a class="footer__link" href="#">Полезные статьи</a><a class="footer__link" href="#">Блог</a><a class="footer__link" href="#">Контакты</a>
+            <div class="footer__link-col"><a class="footer__link" href="articles-page.html">Полезные статьи</a><a class="footer__link" href="#">Блог</a><a class="footer__link" href="#">Контакты</a>
             </div>
           </div>
           <div class="footer__copy-block"><a class="footer__m-block" href="#">
@@ -330,6 +330,49 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal-enter">
+      <div class="modal__cont">
+        <form class="modal__box"><a class="modal__close-btn">
+          <svg class="sprite__icon icon cancel">
+            <use xlink:href="img/sprite.svg#cancel"></use>
+          </svg></a><span class="modal__title">Войти</span><input class="modal__input form-inp" type="e-mail" placeholder="e-mail"/><input class="modal__input form-inp" type="password" placeholder="пароль"/>
+          <button class="modal__button form-btn" type="submit">Войти
+          </button><a class="modal__reg" id="reg">регистрация</a>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="modal-reg">
+      <div class="modal__cont">
+        <form class="modal__box"><a class="modal__close-btn">
+          <svg class="sprite__icon icon cancel">
+            <use xlink:href="img/sprite.svg#cancel"></use>
+          </svg></a><span class="modal__title">Регистрация</span><input class="modal__input form-inp" type="e-mail" placeholder="e-mail"/><input class="modal__input form-inp" type="password" placeholder="пароль"/>
+          <button class="modal__button form-btn" type="submit">Зарегестрироваться
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="modal-success">
+      <div class="modal__cont">
+        <div class="modal__box"><a class="modal__close-btn">
+          <svg class="sprite__icon icon cancel">
+            <use xlink:href="img/sprite.svg#cancel"></use>
+          </svg></a><span class="modal__title">Ваша заявка принята</span><span class="modal__text">Вам перезвонят в<br>течении 2 минут</span>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-appointment">
+      <div class="modal__cont">
+        <form class="modal__box"><a class="modal__close-btn">
+          <svg class="sprite__icon icon cancel">
+            <use xlink:href="img/sprite.svg#cancel"></use>
+          </svg></a><span class="modal__title">Записаться</span>
+          <input type="hidden" value="individual"><input class="modal__input form-inp" type="e-mail" placeholder="e-mail"/><input class="modal__input form-inp" type="password" placeholder="пароль"/>
+          <button class="modal__button form-btn" type="submit">Записаться
+          </button>
+        </form>
+      </div>
+    </div>
     <script src="js/vendors.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
