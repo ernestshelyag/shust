@@ -17,6 +17,7 @@ module.exports = function() {
       return $.gulp
         .src($.path.jsVendors)
         .pipe($.gp.concat('vendors.min.js'))
+        .pipe($.gp.uglify())
         .pipe($.gulp.dest($.config.root + 'js/'));
     }
   });
