@@ -1,0 +1,78 @@
+.students
+  padding-top: 85px
+
+  &__top-block
+    margin-bottom: 90px
+  &__main-block
+    background: $bg-gray
+    padding: 48px 0 87px
+  &__cont
+    display: flex
+    justify-content: space-between
+  &__btn-item
+    width: 358px
+    margin-bottom: 25px
+    +tr
+    &:last-child
+      margin-bottom: 0
+    &:hover
+      background: #fff
+      color: #000
+      border: solid 2px $main-col-dark
+    &.active
+      background: $main-col-med
+      color: #fff
+
+  // - - - - -
+
+  &__pdf-block
+    flex-grow: 1
+    background: #fff
+    border-radius: 20px
+    box-shadow: 0 17px 35px 0 rgba(10, 26, 25, 0.07)
+    margin-left: 30px
+  &__box
+    padding: 50px 60px
+    display: none
+    &.active
+      display: block
+  &__items-hiding
+    margin-left: 30px
+    display: none
+
+  &__pdf-title
+    display: inline-block
+    margin: 30px 0 20px
+    cursor: pointer
+    +tr
+    +psevdo
+    &:before, &:after
+      width: 15px
+      height: 15px
+      right: -35px
+      top: -3px
+      transform: rotate(45deg)
+      transition: right .5s ease
+    &:before
+      border-bottom: solid 2px $main-col
+    &:after
+      border-right: solid 2px $main-col
+    &.active
+      &:before
+        right: -46px
+      &:after
+        right: -29px
+    &:hover
+      color: $main-col
+
+  &__item
+    display: flex
+    align-items: center
+    margin: 15px 0
+    font-size: 18px
+    .pdf
+      width: 22px
+      height: 29px
+      fill: $main-col
+    span
+      padding-left: 20px

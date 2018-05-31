@@ -10,5 +10,7 @@ $(function () {
   workWithSlider();
   reviewSliders();
   diplomSlider();
+  students();
+  questions();
   modals();
 });

@@ -1,0 +1,111 @@
+extends ../template
+
+block variables
+    - var title = 'Session'
+    - var bodyFlex = true
+
+block content
+
+    +b.HEADER.header
+        +b.DIV.header-top
+            +e.DIV.nav-block
+                +e.NAV.nav
+                    +e.A.nav-link(href="price.html") Цены
+                    +e.A.nav-link(href="about.html") Обо мне
+                    +e.A.nav-link(href="review-page.html") Отзывы
+                    +e.A.nav-link(href="questions.html") Частые вопросы
+                    +e.A.nav-link(href="articles-page.html") Полезные статьи
+                    +e.A.nav-link(href="students.html") Студентам
+                    +e.A.nav-link(href="contacts.html") Контакты
+                +e.SPAN.enter#enter Войти
+            +e.DIV.info-block
+                +b.A.logo-block(href="/")
+                    +icon("logo", "sprite")
+                    +e.DIV.info
+                        +e.SPAN.name Надежда Шуст
+                        +e.SPAN.text Клинический психолог
+                +b.DIV.layout-info
+                    +e.UL.list
+                        +e.LI.item
+                            +e.DIV.link
+                                +icon("mark", "sprite")
+                                +e.DIV.text-block
+                                    +e.SPAN.title Адрес:
+                                    +e.SPAN.text г.Москва ул.Мясницкая, дом 30/1/2, строение 1
+                        +e.LI.item
+                            +e.A.link(href="#")
+                                +icon("plane", "sprite")
+                                +e.DIV.text-block
+                                    +e.SPAN.title E-mail:
+                                    +e.SPAN.text nadezhda@shust.me
+                        +e.LI.item
+                            +e.A.link(href="#")
+                                +icon("skype", "sprite")
+                                +e.DIV.text-block
+                                    +e.SPAN.title Skype:
+                                    +e.SPAN.text nadezhda.shust
+                        +e.LI.item
+                            +e.A.link(href="#")
+                                +icon("phone", "sprite")
+                                +e.DIV.text-block
+                                    +e.SPAN.text_phone +7 (926)724-45-54
+        +b.DIV.header-bottom
+            +e.NAV.nav
+                +e.A.link.active(href="session.html") Сеансы
+                +e.A.link(href="about-session.html") Как проходят сеансы
+                +e.A.link(href="single-article.html") Разновидности гипноза
+                +e.A.link(href="video.html") Видео
+
+    // header end
+
+    +b.MAIN.session(class=bodyFlex ? 'main-flex' : '')
+        +e.DIV.top-block.wrp
+            +b.DIV.breadcrumbs
+                a(href="/") Главная
+                span /
+                a Сеансы
+            +e.H1.title Сеансы
+            +e.P.top-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolore est iure odio sapiente? Accusantium cumque deleniti fugit obcaecati quo. A debitis distinctio earum eligendi, eos eum eveniet, expedita hic, impedit ipsa itaque quisquam tempore vitae! Adipisci alias at cum earum, incidunt minima nobis quos sint. Error incidunt, voluptas! Distinctio, doloremque eius eos impedit incidunt iusto magni maxime, nam nemo obcaecati perferendis, qui reprehenderit sed tempore ullam ut vero. Dignissimos enim expedita explicabo molestiae natus nihil nulla obcaecati rem reprehenderit. Asperiores consectetur consequatur culpa dolor dolores, doloribus enim est inventore iste nisi officiis placeat quasi sapiente suscipit tenetur ut veniam!
+        +e.UL.list
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии loremipsumdjk
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+            +e.LI.item
+                +e.A.link(href="single-article.html")
+                    +e.IMG.img(src="img/card.jpg")
+                    +e.H5.text Фобии
+
+    include ../layout/footer

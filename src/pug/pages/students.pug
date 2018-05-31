@@ -1,0 +1,74 @@
+extends ../template
+
+block variables
+    - var title = 'Students'
+    - var bodyFlex = true
+
+block content
+
+    include ../layout/header
+
+    +b.MAIN.students(class=bodyFlex ? 'main-flex' : '')
+        +e.DIV.top-block.wrp
+            +b.DIV.breadcrumbs
+                a(href="/") Главная
+                span /
+                a Студентам
+            +e.H1.title Студентам
+        +e.DIV.main-block
+            +e.DIV.cont.wrp
+                +e.UL.btn-list
+                    +e.LI.btn-item.btn(data-tab="1") Психлсоматика
+                    +e.LI.btn-item.btn(data-tab="2") Проективные методы клинической психологии
+                    +e.LI.btn-item.btn(data-tab="3") Психлсоматика
+                    +e.LI.btn-item.btn(data-tab="4") Психлсоматика
+                    +e.LI.btn-item.btn(data-tab="5") Психлсоматика
+                    +e.LI.btn-item.btn.active(data-tab="6") Психлсоматика
+                +e.DIV.pdf-block
+
+                    +e.DIV.box(data-content="1")
+                        span content 1
+                    +e.DIV.box(data-content="2")
+                        span content 2
+                    +e.DIV.box(data-content="3")
+                        span content 3
+                    +e.DIV.box(data-content="4")
+                        span content 4
+                    +e.DIV.box(data-content="5")
+                        span content 5
+
+                    +e.DIV.box.active(data-content="6")
+                        +e.A.item(href="#" download)
+                            +icon("pdf", "sprite")
+                            span Конспекты, конспекты...
+                        +e.A.item(href="#" download)
+                            +icon("pdf", "sprite")
+                            span Конспекты, конспекты...
+                        +e.H5.pdf-title Бланки
+                        +e.DIV.items-hiding
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+                            +e.A.item(href="#" download)
+                                +icon("pdf", "sprite")
+                                span Конспекты, конспекты...
+
+    include ../layout/footer

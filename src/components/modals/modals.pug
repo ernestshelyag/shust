@@ -1,13 +1,28 @@
+.hidden#modal
+    +b.DIV.hero-callback
+        +e.DIV.container
+            +e.SPAN.title
+                | Закажите обратный звонок,
+                br
+                | чтобы узнать подробнее
+            +e.FORM.form.callback-form
+                +e.DIV.input-block.hero-callback__input-block_name
+                    +e.INPUT.input(type='text' placeholder='Ваше имя')
+                +e.DIV.input-block.hero-callback__input-block_phone
+                    +e.INPUT.input.callback-input(type='text' name="phone" placeholder='Ваш номер телефона')
+                +e.DIV.submit-block
+                    +e.INPUT.submit(type='submit' value='Заказать звонок')
+
+
 +b.DIV.modal#modal-enter
-    +e.cont
-        +e.FORM.box
-            +e.A.close-btn
-                +icon("cancel", "sprite")
-            +e.SPAN.title Войти
-            +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
-            +e.INPUT.input.form-inp(type="password" placeholder="пароль")
-            +e.BUTTON.button.form-btn(type="submit") Войти
-            +e.A.reg#reg регистрация
+    +e.FORM.box
+        +e.A.close-btn
+            +icon("cancel", "sprite")
+        +e.SPAN.title Войти
+        +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
+        +e.INPUT.input.form-inp(type="password" placeholder="пароль")
+        +e.BUTTON.button.form-btn(type="submit") Войти
+        +e.A.reg#reg регистрация
 
 +b.DIV.modal#modal-reg
     +e.DIV.cont

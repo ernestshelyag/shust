@@ -3,7 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Price</title>
+    <title>Contacts</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <!--base(target='_blank')-->
@@ -82,75 +82,23 @@
         </nav>
       </div>
     </header>
-    <main class="price main-flex" role="main">
-      <div class="price__top-block wrp">
-        <div class="breadcrumbs"><a href="/">Главная</a><span>/</span><a>Цены</a>
+    <main class="contacts main-flex" role="main">
+      <div class="contacts__top-block wrp">
+        <div class="breadcrumbs"><a href="/">Главная</a><span>/</span><a>Контакты</a>
         </div>
-        <h1 class="price__title">Цены
+        <h1 class="contacts__title">Контакты
         </h1>
-        <div class="price__info-block">
-          <p class="price__text">Перед оплатой курса необходимо пройти первичную консультативную встречу длительностью 1-1.5 ч. Стоимость первой встречи<span>10 000 рублей</span>
-          </p><a class="price__top-btn btn">Записаться
-          <svg class="sprite__icon icon arr-next">
-            <use xlink:href="img/sprite.svg#arr-next"></use>
-          </svg></a>
-        </div>
       </div>
-      <div class="price__price-block">
-        <ul class="price__list wrp">
-          <li class="price-item">
-            <h4 class="price-item__title">Индивидуальные сеансы
-            </h4>
-            <div class="price-item__block">
-              <div class="price-item__lev"><span class="price-item__text">1-4 сеанса</span><span class="price-item__price">20 000 руб</span>
-              </div>
-              <div class="price-item__lev"><span class="price-item__text">5-8 сеансов</span><span class="price-item__price">15 000 руб</span>
-              </div>
-              <div class="price-item__lev"><span class="price-item__text">9-12 сеансов</span><span class="price-item__price">10 000 руб</span>
-              </div>
-            </div>
-            <div class="price-item__bottom"><span class="price-item__total-price">180 000 руб</span><a class="price-item__btn btn-dark">записаться</a>
-            </div>
-          </li>
-          <li class="price-item">
-            <h4 class="price-item__title">Групповые сеансы
-            </h4>
-            <div class="price-item__block">
-              <div class="price-item__lev"><span class="price-item__text">более чем за 7 дней</span><span class="price-item__price">36 000 руб</span>
-              </div>
-              <div class="price-item__lev"><span class="price-item__text">более чем за 20 дней</span><span class="price-item__price">30 000 руб</span>
-              </div>
-            </div>
-            <div class="price-item__bottom"><span class="price-item__total-price">40 000 руб</span><a class="price-item__btn btn-dark">записаться</a>
-            </div>
-          </li>
-          <li class="price-item">
-            <h4 class="price-item__title">Психодиагностика
-            </h4>
-            <div class="price-item__block">
-              <div class="price-item__lev"><span class="price-item__text">1-4 сеанса</span><span class="price-item__price">20 000 руб</span>
-              </div>
-              <div class="price-item__lev"><span class="price-item__text">5-8 сеансов</span><span class="price-item__price">15 000 руб</span>
-              </div>
-              <div class="price-item__lev"><span class="price-item__text">9-12 сеансов</span><span class="price-item__price">10 000 руб</span>
-              </div>
-            </div>
-            <div class="price-item__bottom"><span class="price-item__total-price">10 000 руб</span><a class="price-item__btn btn-dark">записаться</a>
-            </div>
-          </li>
-          <li class="price-item">
-            <h4 class="price-item__title">Научные лекции
-            </h4>
-            <div class="price-item__block">
-              <div class="price-item__lev"><span class="price-item__text">более чем за 7 дней</span><span class="price-item__price">36 000 руб</span>
-              </div>
-              <div class="price-item__lev"><span class="price-item__text">более чем за 20 дней</span><span class="price-item__price">30 000 руб</span>
-              </div>
-            </div>
-            <div class="price-item__bottom"><span class="price-item__total-price">40 000 руб</span><a class="price-item__btn btn-dark">записаться</a>
-            </div>
-          </li>
-        </ul>
+      <div class="contacts__map-block">
+        <div class="contacts__map" id="map">
+        </div>
+        <div class="contacts__form-block wrp">
+          <form class="contacts__form"><span class="contacts__form-title">Заказать звонок</span>
+            <input type="hidden" value="individual"><input class="contacts__input form-inp" type="e-mail" placeholder="e-mail"/><input class="contacts__input form-inp" type="password" placeholder="пароль"/>
+            <button class="contacts__button form-btn" type="submit">Записаться
+            </button>
+          </form>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -236,6 +184,43 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>
+      ymaps.ready(init);
+      var myMap;
+      
+      function init () {
+        myMap = new ymaps.Map("map", {
+          center: [59.931632, 30.336528],
+          zoom: 7
+        });
+      
+        var myPlacemark = new ymaps.Placemark([59.931551, 34.33400], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: '/img/mark.svg',
+          iconImageSize: [90, 90],
+          iconImageOffset: [-3, -42],
+          hintContent: '',
+          balloonContent: ''
+        });
+      
+        myMap.geoObjects.add(myPlacemark);
+      
+        myMap.controls
+          .remove('Button')
+          .remove('fullscreenControl')
+          .remove('typeSelector')
+          .remove('geolocationControl')
+          .remove('searchControl')
+          .remove('trafficControl')
+          .remove('rulerControl')
+          .remove('zoomControl');
+      
+        myMap.behaviors.disable([
+          'scrollZoom'
+        ]);
+      }
+    </script>
     <div class="hidden" id="modal">
       <div class="hero-callback">
         <div class="hero-callback__container"><span class="hero-callback__title">Закажите обратный звонок,<br>чтобы узнать подробнее</span>

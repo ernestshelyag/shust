@@ -1,0 +1,65 @@
+extends ../template
+
+block variables
+    - var title = 'Contacts'
+    - var bodyFlex = true
+
+block content
+
+    include ../layout/header
+
+    +b.MAIN.contacts(class=bodyFlex ? 'main-flex' : '')
+        +e.DIV.top-block.wrp
+            +b.DIV.breadcrumbs
+                a(href="/") Главная
+                span /
+                a Контакты
+            +e.H1.title Контакты
+        +e.DIV.map-block
+            +e.DIV.map#map
+            +e.DIV.form-block.wrp
+                +e.FORM.form
+                    +e.SPAN.form-title Заказать звонок
+                    input(type="hidden" value="individual")
+                    +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
+                    +e.INPUT.input.form-inp(type="password" placeholder="пароль")
+                    +e.BUTTON.button.form-btn(type="submit") Записаться
+
+    include ../layout/footer
+
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script.
+      ymaps.ready(init);
+      var myMap;
+
+      function init () {
+        myMap = new ymaps.Map("map", {
+          center: [59.931632, 30.336528],
+          zoom: 7
+        });
+
+        var myPlacemark = new ymaps.Placemark([59.931551, 34.33400], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: '/img/mark.svg',
+          iconImageSize: [90, 90],
+          iconImageOffset: [-3, -42],
+          hintContent: '',
+          balloonContent: ''
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+
+        myMap.controls
+          .remove('Button')
+          .remove('fullscreenControl')
+          .remove('typeSelector')
+          .remove('geolocationControl')
+          .remove('searchControl')
+          .remove('trafficControl')
+          .remove('rulerControl')
+          .remove('zoomControl');
+
+        myMap.behaviors.disable([
+          'scrollZoom'
+        ]);
+      }
