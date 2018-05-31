@@ -241,61 +241,7 @@
         </div>
       </div>
     </footer>
-    <div class="hidden" id="modal">
-      <div class="hero-callback">
-        <div class="hero-callback__container"><span class="hero-callback__title">Закажите обратный звонок,<br>чтобы узнать подробнее</span>
-          <form class="hero-callback__form callback-form">
-            <div class="hero-callback__input-block hero-callback__input-block hero-callback__input-block_name"><input class="hero-callback__input" type="text" placeholder="Ваше имя"/>
-            </div>
-            <div class="hero-callback__input-block hero-callback__input-block hero-callback__input-block_phone"><input class="hero-callback__input callback-input" type="text" name="phone" placeholder="Ваш номер телефона"/>
-            </div>
-            <div class="hero-callback__submit-block"><input class="hero-callback__submit" type="submit" value="Заказать звонок"/>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-enter">
-      <form class="modal__box"><a class="modal__close-btn">
-        <svg class="sprite__icon icon cancel">
-          <use xlink:href="img/sprite.svg#cancel"></use>
-        </svg></a><span class="modal__title">Войти</span><input class="modal__input form-inp" type="e-mail" placeholder="e-mail"/><input class="modal__input form-inp" type="password" placeholder="пароль"/>
-        <button class="modal__button form-btn" type="submit">Войти
-        </button><a class="modal__reg" id="reg">регистрация</a>
-      </form>
-    </div>
-    <div class="modal" id="modal-reg">
-      <div class="modal__cont">
-        <form class="modal__box"><a class="modal__close-btn">
-          <svg class="sprite__icon icon cancel">
-            <use xlink:href="img/sprite.svg#cancel"></use>
-          </svg></a><span class="modal__title">Регистрация</span><input class="modal__input form-inp" type="e-mail" placeholder="e-mail"/><input class="modal__input form-inp" type="password" placeholder="пароль"/>
-          <button class="modal__button form-btn" type="submit">Зарегестрироваться
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="modal" id="modal-success">
-      <div class="modal__cont">
-        <div class="modal__box"><a class="modal__close-btn">
-          <svg class="sprite__icon icon cancel">
-            <use xlink:href="img/sprite.svg#cancel"></use>
-          </svg></a><span class="modal__title">Ваша заявка принята</span><span class="modal__text">Вам перезвонят в<br>течении 2 минут</span>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-appointment">
-      <div class="modal__cont">
-        <form class="modal__box"><a class="modal__close-btn">
-          <svg class="sprite__icon icon cancel">
-            <use xlink:href="img/sprite.svg#cancel"></use>
-          </svg></a><span class="modal__title">Записаться</span>
-          <input type="hidden" value="individual"><input class="modal__input form-inp" type="e-mail" placeholder="e-mail"/><input class="modal__input form-inp" type="password" placeholder="пароль"/>
-          <button class="modal__button form-btn" type="submit">Записаться
-          </button>
-        </form>
-      </div>
-    </div>
+    <!--include ../components/modals/modals-->
     <script src="js/vendors.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
