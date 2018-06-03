@@ -5,9 +5,11 @@
             +e.DIV.text-block
                 +e.SPAN.title Остались вопросы? Задайте вопросы нашему менеджеру
                 +e.SPAN.text Вам перезвонят в течение 2 минут
-            +e.FORM.form
-                +e.INPUT.input.form-inp(type="text" name="phone" placeholder="Ваш телефон")
-                +e.BUTTON.button.form-btn(type="submit") Отправить
+            +e.FORM.form_callback
+                input(type="hidden" name="hidden" value="callback")
+                +e.DIV.lev
+                    +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+                +e.BUTTON.button.form-btn(type="submit") Записаться
 
     +e.DIV.footer-bottom
         +e.DIV.links-block
@@ -34,7 +36,7 @@
                     +e.A.link(href="articles-page.html") Блог
                     +e.A.link(href="contacts.html") Контакты
             +e.DIV.copy-block
-                +e.A.m-block(href="#")
+                +e.A.m-block(href="https://markello.ru/" target="_blank")
                     +icon("markello", "sprite")
                     +e.SPAN.m-text_name Markello
                     +e.SPAN.m-text - made with love
@@ -53,13 +55,13 @@
                                 +e.SPAN.title Адрес:
                                 +e.SPAN.text г.Москва ул.Мясницкая, дом 30/1/2, строение 1
                     +e.LI.item
-                        +e.A.link(href="#")
+                        +e.A.link(href="mailto:nadezhda@shust.me")
                             +icon("plane", "sprite")
                             +e.DIV.text-block
                                 +e.SPAN.title E-mail:
                                 +e.SPAN.text nadezhda@shust.me
                     +e.LI.item
-                        +e.A.link(href="#")
+                        +e.A.link(href="skype:nadezhda.shust")
                             +icon("skype", "sprite")
                             +e.DIV.text-block
                                 +e.SPAN.title Skype:
@@ -72,7 +74,7 @@
                         +e.A.social-link(href="#")
                             +icon("vk", "sprite")
                     +e.LI.item
-                        +e.A.link(href="#")
+                        +e.A.link(href="tel:+79267244554")
                             +icon("phone", "sprite")
                             +e.DIV.text-block
                                 +e.SPAN.text_phone +7 (926)724-45-54

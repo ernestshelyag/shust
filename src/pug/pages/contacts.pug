@@ -16,13 +16,15 @@ block content
                 a Контакты
             +e.H1.title Контакты
         +e.DIV.map-block
-            +e.DIV.map#map
+            +e.DIV.map#map(data-zoom="7" data-lat="59.931632" data-lon="30.336528" data-latmark="59.931551" data-lonmark="33.336528")
             +e.DIV.form-block.wrp
                 +e.FORM.form
-                    +e.SPAN.form-title Заказать звонок
-                    input(type="hidden" value="individual")
-                    +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
-                    +e.INPUT.input.form-inp(type="password" placeholder="пароль")
+                    +e.H1.form-title Заказать звонок
+                    input(type="hidden" name="hidden" value="contacts-page-callback")
+                    +e.DIV.lev
+                        +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+                    +e.DIV.lev
+                        +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
                     +e.BUTTON.button.form-btn(type="submit") Записаться
 
     include ../layout/footer
@@ -31,14 +33,15 @@ block content
     script.
       ymaps.ready(init);
       var myMap;
+      var el = document.getElementById('map').dataset;
 
       function init () {
         myMap = new ymaps.Map("map", {
-          center: [59.931632, 30.336528],
-          zoom: 7
+          center: [el.lat, el.lon],
+          zoom: el.zoom
         });
 
-        var myPlacemark = new ymaps.Placemark([59.931551, 34.33400], {}, {
+        var myPlacemark = new ymaps.Placemark([el.latmark, el.lonmark], {}, {
           iconLayout: 'default#image',
           iconImageHref: '/img/mark.svg',
           iconImageSize: [90, 90],

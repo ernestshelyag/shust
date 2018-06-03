@@ -8,7 +8,7 @@ $browser-context: 16 // Default
   box-sizing: border-box
 
 *::selection
-  background: rgba($main-col,.93)
+  background: rgba($main-col-med,.93)
   color: white
 
 html
@@ -47,15 +47,19 @@ button
   &::-webkit-input-placeholder  /* WebKit browsers */
       color: $color
       opacity: $opacity
+      text-transform: uppercase
   &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
       color: $color
       opacity: $opacity
+      text-transform: uppercase
   &::-moz-placeholder  /* Mozilla Firefox 19+ */
       color: $color
       opacity: $opacity
+      text-transform: uppercase
   &:-ms-input-placeholder  /* Internet Explorer 10+ */
       color: $color
       opacity: $opacity
+      text-transform: uppercase
 
 +placeholder-color(#fff, 0.8)
 

@@ -6,11 +6,11 @@ $(window).on('load', function () {
 $(function () {
   header();
   heroSlider();
-  phone();
   workWithSlider();
   reviewSliders();
   diplomSlider();
   students();
   questions();
   modals();
+  sendForm();
 });

@@ -33,19 +33,19 @@ block content
                                     +e.SPAN.title Адрес:
                                     +e.SPAN.text г.Москва ул.Мясницкая, дом 30/1/2, строение 1
                         +e.LI.item
-                            +e.A.link(href="#")
+                            +e.A.link(href="mailto:nadezhda@shust.me")
                                 +icon("plane", "sprite")
                                 +e.DIV.text-block
                                     +e.SPAN.title E-mail:
                                     +e.SPAN.text nadezhda@shust.me
                         +e.LI.item
-                            +e.A.link(href="#")
+                            +e.A.link(href="skype:nadezhda.shust")
                                 +icon("skype", "sprite")
                                 +e.DIV.text-block
                                     +e.SPAN.title Skype:
                                     +e.SPAN.text nadezhda.shust
                         +e.LI.item
-                            +e.A.link(href="#")
+                            +e.A.link(href="tel:+79267244554")
                                 +icon("phone", "sprite")
                                 +e.DIV.text-block
                                     +e.SPAN.text_phone +7 (926)724-45-54
@@ -65,28 +65,26 @@ block content
                 span /
                 a Видео
             +e.H1.title Видео
-            +e.UL.list
-                +e.LI.item
-                    +e.DIV.img-block
-                        +e.IMG.img(src="img/video.jpg")
-                        +e.A.btn.btn-play
-                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
-                +e.LI.item
-                    +e.DIV.img-block
-                        +e.IMG.img(src="img/video.jpg")
-                        +e.A.btn.btn-play
-                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
-                +e.LI.item
-                    +e.DIV.img-block
-                        +e.IMG.img(src="img/video.jpg")
-                        +e.A.btn.btn-play
-                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
-                +e.LI.item
-                    +e.DIV.img-block
-                        +e.IMG.img(src="img/video.jpg")
-                        +e.A.btn.btn-play
-                    +e.H4.lil-title Влияние аффекта на семантическую организацию значений
-            +e.DIV.btn-block
-                +e.A.btn-load.btn Загрузить еще
+            ul
+                li
+                    div
+                        img(src="img/video.jpg")
+                        a(href="https://www.youtube.com/watch?v=cUYSGojUuAU")
+                    h4 Влияние аффекта на семантическую организацию значений
+                li
+                    div
+                        img(src="img/video.jpg")
+                        a(href="https://www.youtube.com/watch?v=cUYSGojUuAU")
+                    h4 Влияние аффекта на семантическую организацию значений
+                li
+                    div
+                        img(src="img/video.jpg")
+                        a(href="https://www.youtube.com/watch?v=cUYSGojUuAU")
+                    h4 Влияние аффекта на семантическую организацию значений
+                li
+                    div
+                        img(src="img/video.jpg")
+                        a(href="https://www.youtube.com/watch?v=cUYSGojUuAU")
+                    h4 Влияние аффекта на семантическую организацию значений
 
     include ../layout/footer

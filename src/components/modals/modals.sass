@@ -1,36 +1,13 @@
 .modal
-  //display: none
-  //position: fixed
-  //background: rgba(#fff, .7)
-  //top: 0
-  //right: 0
-  //bottom: 0
-  //left: 0
-  //z-index: 1000
-  //overflow: hidden
-  +bb
   max-width: 414px
+  margin: 40px auto
+  position: relative
 
-  &__cont
-
-  &__box
-    +b
-    +vcenter
+  &__form, &__box
     text-align: center
     padding: 50px 40px
-
     border-radius: 20px
-    position: relative
     background: $main-col
-  &__close-btn
-    cursor: pointer
-    position: absolute
-    top: 20px
-    right: 20px
-    svg
-      fill: #fff
-      width: 20px
-      height: 20px
   &__title
     padding-bottom: 20px
     display: block
@@ -39,8 +16,40 @@
     text-transform: uppercase
     letter-spacing: 3px
     line-height: 1.3
-  &__input
+  &__lev
     margin-bottom: 17px
+    position: relative
+    &.form-correct
+      +psevdo
+      &:before
+        width: 10px
+        height: 20px
+        border-bottom: solid 2px $form-border-correct
+        border-right: solid 2px $form-border-correct
+        transform: rotate(45deg)
+        top: 0
+        bottom: 10px
+        right: 35px
+        margin: auto
+      input
+        border: solid 2px $form-border-correct
+    &.form-err
+      +psevdo
+      &:before, &:after
+        width: 20px
+        height: 2px
+        background: $form-border-err
+        top: 0
+        bottom: 0
+        right: 35px
+        margin: auto
+      &:before
+        transform: rotate(45deg)
+      &:after
+        transform: rotate(-45deg)
+      input
+        border: solid 2px $form-border-err
+
   &__reg
     margin-top: 30px
     font-size: 14px
@@ -48,6 +57,7 @@
     text-transform: uppercase
     letter-spacing: 3px
     cursor: pointer
+    text-decoration: none
     +psevdo
     &:before
       left: 0
@@ -66,6 +76,45 @@
     text-transform: uppercase
     line-height: 1.5
 
+// mfp
+
+.my-mfp-animate .mfp-close
+  color: #fff
+  top: 10px
+  right: 10px
+  opacity: 1
+
+.my-mfp-video .mfp-close
+  font-size: 38px
+  color: $main-col
+  opacity: 1
+
 .mfp-bg
   background: #fff
-  opacity: .7
+
+// popup animation
+
+.my-mfp-animate .modal
+  opacity: 0
+  transform: scale(.8)
+  +tr
+
+.my-mfp-animate.mfp-ready .modal
+  opacity: 1
+  transform: scale(1)
+
+.my-mfp-animate.mfp-removing .modal
+  opacity: 0
+  transform: scale(.8)
+
+// bg animation
+
+.my-mfp-animate.mfp-bg, .my-mfp-video.mfp-bg
+  opacity: 0
+  transition: opacity .3s ease-out
+
+.my-mfp-animate.mfp-ready.mfp-bg, .my-mfp-video.mfp-ready.mfp-bg
+  opacity: .8
+
+.my-mfp-animate.mfp-removing.mfp-bg, .my-mfp-video.mfp-removing.mfp-bg
+  opacity: 0

@@ -1,57 +1,118 @@
-.hidden#modal
-    +b.DIV.hero-callback
-        +e.DIV.container
-            +e.SPAN.title
-                | Закажите обратный звонок,
-                br
-                | чтобы узнать подробнее
-            +e.FORM.form.callback-form
-                +e.DIV.input-block.hero-callback__input-block_name
-                    +e.INPUT.input(type='text' placeholder='Ваше имя')
-                +e.DIV.input-block.hero-callback__input-block_phone
-                    +e.INPUT.input.callback-input(type='text' name="phone" placeholder='Ваш номер телефона')
-                +e.DIV.submit-block
-                    +e.INPUT.submit(type='submit' value='Заказать звонок')
+// enter & reg modals
 
-
-+b.DIV.modal#modal-enter
-    +e.FORM.box
-        +e.A.close-btn
-            +icon("cancel", "sprite")
-        +e.SPAN.title Войти
-        +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
-        +e.INPUT.input.form-inp(type="password" placeholder="пароль")
++b.DIV.modal.mfp-hide#enter-popup
+    +e.FORM.form#form-enter
+        +e.H1.title Войти
+        input(type="hidden" name="hidden" value="enter-modal")
+        +e.DIV.lev
+            +e.INPUT.input_mail.form-inp(type="email" name="email" placeholder="e-mail")
+        +e.DIV.lev
+            +e.INPUT.input_pass.form-inp(type="password" name="password" placeholder="пароль")
         +e.BUTTON.button.form-btn(type="submit") Войти
-        +e.A.reg#reg регистрация
+        +e.A.reg(href="#reg-popup") Регистрация
 
-+b.DIV.modal#modal-reg
-    +e.DIV.cont
-        +e.FORM.box
-            +e.A.close-btn
-                +icon("cancel", "sprite")
-            +e.SPAN.title Регистрация
-            +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
-            +e.INPUT.input.form-inp(type="password" placeholder="пароль")
-            +e.BUTTON.button.form-btn(type="submit") Зарегестрироваться
++b.DIV.modal.mfp-hide#reg-popup
+    +e.FORM.form_reg#form-reg
+        +e.H1.title Регистрация
+        input(type="hidden" name="hidden" value="reg-modal")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_mail.form-inp(type="email" name="email" placeholder="e-mail")
+        +e.DIV.lev
+            +e.INPUT.input_pass.form-inp(type="password" name="password" placeholder="пароль")
+        +e.BUTTON.button.form-btn(type="submit") Зарегестрироваться
 
-+b.DIV.modal#modal-success
-    +e.DIV.cont
-        +e.DIV.box
-            +e.A.close-btn
-                +icon("cancel", "sprite")
-            +e.SPAN.title Ваша заявка принята
-            +e.SPAN.text
-                | Вам перезвонят в
-                br
-                | течении 2 минут
+// hero-slider modals
 
-+b.DIV.modal#modal-appointment
-    +e.DIV.cont
-        +e.FORM.box
-            +e.A.close-btn
-                +icon("cancel", "sprite")
-            +e.SPAN.title Записаться
-            input(type="hidden" value="individual")
-            +e.INPUT.input.form-inp(type="e-mail" placeholder="e-mail")
-            +e.INPUT.input.form-inp(type="password" placeholder="пароль")
-            +e.BUTTON.button.form-btn(type="submit") Записаться
++b.DIV.modal.mfp-hide#hero-slider-popup-slide-1
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="hero-slider-modal-1")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
++b.DIV.modal.mfp-hide#hero-slider-popup-slide-2
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="hero-slider-modal-2")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
++b.DIV.modal.mfp-hide#hero-slider-popup-slide-3
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="hero-slider-modal-3")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
+// price-block modals
+
++b.DIV.modal.mfp-hide#price-popup-top
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="price-modal-top")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
++b.DIV.modal.mfp-hide#price-popup-item-1
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="price-modal-item-1")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
++b.DIV.modal.mfp-hide#price-popup-item-2
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="price-modal-item-2")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
++b.DIV.modal.mfp-hide#price-popup-item-3
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="price-modal-item-3")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
++b.DIV.modal.mfp-hide#price-popup-item-4
+    +e.FORM.form_appointment
+        +e.H1.title Записаться
+        input(type="hidden" name="hidden" value="price-modal-item-4")
+        +e.DIV.lev
+            +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше Имя")
+        +e.DIV.lev
+            +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
+        +e.BUTTON.button.form-btn(type="submit") Записаться
+
+// success modal
+
++b.DIV.modal.mfp-hide#success-popup
+    +e.DIV.box
+        +e.H1.title Ваша заявка принята
+        +e.SPAN.text
+            | Вам перезвонят в
+            br
+            | течении 2 минут

@@ -8,22 +8,28 @@ form
 
 .form-btn, .form-inp
   font-weight: bold
-  font-size: 14px
-  text-transform: uppercase
+  font-size: 16px
+  //text-transform: uppercase
   border-radius: 50px
   width: 100%
   letter-spacing: 3px
+
+.form-inp
+  color: #fff
+  padding: 22px 10px 22px 50px
+  border: solid 2px $form-border
+  &:focus
+    border: solid 2px #fff
 
 .form-btn
   color: $main-col
   background: #fff
   text-align: center
   padding: 22px 0
-
-.form-inp
-  color: #fff
-  padding: 22px 10px 22px 50px
-  border: solid 2px $form-border
+  transition: color .3s ease
+  text-transform: uppercase
+  &:hover
+    color: $main-col-dark
 
 // titles
 
@@ -68,6 +74,8 @@ h5
 
 main
   margin-top: 219px
+  +r(880)
+    margin-top: 167px
 
 body
   letter-spacing: 2px
@@ -105,7 +113,7 @@ p
     height: 13px
     position: absolute
     top: 0
-    bottom: 0
+    bottom: 3px
     margin: auto
     right: 34px
     fill: $main-col

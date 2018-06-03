@@ -20,5 +20,36 @@
     display: block
   &__form
     width: 480px
-  &__input
-    margin-bottom: 20px
+  &__lev
+    margin-bottom: 17px
+    position: relative
+    &.form-correct
+      +psevdo
+      &:before
+        width: 10px
+        height: 20px
+        border-bottom: solid 2px $form-border-correct
+        border-right: solid 2px $form-border-correct
+        transform: rotate(45deg)
+        top: 0
+        bottom: 10px
+        right: 35px
+        margin: auto
+      input
+        border: solid 2px $form-border-correct
+    &.form-err
+      +psevdo
+      &:before, &:after
+        width: 20px
+        height: 2px
+        background: $form-border-err
+        top: 0
+        bottom: 0
+        right: 35px
+        margin: auto
+      &:before
+        transform: rotate(45deg)
+      &:after
+        transform: rotate(-45deg)
+      input
+        border: solid 2px $form-border-err

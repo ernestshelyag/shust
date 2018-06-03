@@ -4,6 +4,10 @@
   align-items: center
   text-decoration: none
   margin-right: 85px
+  +r(1820)
+    margin-right: 0
+  +r(570)
+    width: auto
   .logo
     width: 62px
     height: 36px
@@ -11,6 +15,8 @@
     display: flex
     flex-direction: column
     padding-left: 26px
+    +r(570)
+      padding-left: 10px
   &__name
     font-size: 22px
     font-weight: 500
@@ -19,6 +25,9 @@
     letter-spacing: 2.5px
     white-space: nowrap
     padding-bottom: 5px
+  +r(570)
+    margin-bottom: 14px
+
 
 // - - - - -
 
@@ -27,15 +36,23 @@
   &__list
     height: 100%
     +flex
-  &__item_socials
-    width: 92px
-    +flex
-    svg
-      width: 21px
-      height: 21px
-      fill: $main-col
-      &:hover
-        fill: $main-col-dark
+    +r(820)
+      justify-content: flex-end
+  &__item
+    &_address
+      +r(1435)
+        flex-grow: 1
+      +r(820)
+        display: none
+    &_socials
+      width: 92px
+      +flex
+      svg
+        width: 21px
+        height: 21px
+        fill: $main-col
+        &:hover
+          fill: $main-col-dark
   &__link
     display: flex
     text-decoration: none
@@ -44,6 +61,10 @@
       height: 33px
     .mark
       width: 26px
+      +r(1755)
+        display: none
+      +r(1435)
+        display: block
     .plane
       width: 36px
     .skype
@@ -55,6 +76,10 @@
         fill: $main-col
       .mark
         fill: $font-col
+    +r(1820)
+      margin: 0 0 0 20px
+    +r(570)
+      margin: 0 10px
 
   &__text-block
     display: flex
@@ -62,12 +87,34 @@
     justify-content: space-between
     padding-left: 20px
     height: 33px
+    +r(1600)
+      padding-left: 10px
+    +r(1435)
+      padding-left: 0
+    &_address
+      +r(1435)
+        padding-left: 10px
   &__title
     font-size: 12px
     text-transform: uppercase
+    +r(1435)
+      display: none
+    &_address
+      +r(1755)
+        margin-bottom: 5px
+      +r(1435)
+        display: block
   &__text
     color: #000
+    +r(1435)
+      display: none
+    &_address
+      +r(1435)
+        display: block
     &_phone
       line-height: 33px
       font-weight: 500
       font-size: 20px
+      white-space: nowrap
+      +r(1600)
+        font-size: 16px

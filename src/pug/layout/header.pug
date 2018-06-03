@@ -1,6 +1,37 @@
 +b.HEADER.header
     +b.DIV.header-top
         +e.DIV.nav-block
+            +b.DIV.burger
+                +e.A.btn#burger-btn
+                    +e.DIV.lines-block
+                        +e.SPAN.mid-line
+            +b.DIV.sidebar
+                +e.DIV.cont
+                    +e.UL.list
+                        +e.li.item
+                            +e.A.link(href="/") Главная
+                        +e.li.item
+                            +e.A.link(href="price.html") Цены
+                        +e.li.item
+                            +e.A.link(href="about.html") Обо мне
+                        +e.li.item
+                            +e.A.link(href="review-page.html") Отзывы
+                        +e.li.item
+                            +e.A.link(href="questions.html") Частые вопросы
+                        +e.li.item
+                            +e.A.link(href="articles-page.html") Полезные статьи
+                        +e.li.item
+                            +e.A.link(href="students.html") Студентам
+                        +e.li.item
+                            +e.A.link(href="contacts.html") Контакты
+                        +e.li.item
+                            +e.A.link(href="session.html") Сеансы
+                        +e.li.item
+                            +e.A.link(href="about-session.html") Как проходят сеансы
+                        +e.li.item
+                            +e.A.link(href="single-article.html") Разновидности гипноза
+                        +e.li.item
+                            +e.A.link(href="video.html") Видео
             +e.NAV.nav
                 +e.A.nav-link(href="price.html") Цены
                 +e.A.nav-link(href="about.html") Обо мне
@@ -9,7 +40,7 @@
                 +e.A.nav-link(href="articles-page.html") Полезные статьи
                 +e.A.nav-link(href="students.html") Студентам
                 +e.A.nav-link(href="contacts.html") Контакты
-            +e.SPAN.enter#enter Войти
+            +e.A.enter(href="#enter-popup") Войти
         +e.DIV.info-block
             +b.A.logo-block(href="/")
                 +icon("logo", "sprite")
@@ -18,26 +49,26 @@
                     +e.SPAN.text Клинический психолог
             +b.DIV.layout-info
                 +e.UL.list
-                    +e.LI.item
+                    +e.LI.item_address
                         +e.DIV.link
                             +icon("mark", "sprite")
-                            +e.DIV.text-block
-                                +e.SPAN.title Адрес:
-                                +e.SPAN.text г.Москва ул.Мясницкая, дом 30/1/2, строение 1
+                            +e.DIV.text-block_address
+                                +e.SPAN.title_address Адрес:
+                                +e.SPAN.text_address г.Москва ул.Мясницкая, дом 30/1/2, строение 1
                     +e.LI.item
-                        +e.A.link(href="#")
+                        +e.A.link(href="mailto:nadezhda@shust.me")
                             +icon("plane", "sprite")
                             +e.DIV.text-block
                                 +e.SPAN.title E-mail:
                                 +e.SPAN.text nadezhda@shust.me
                     +e.LI.item
-                        +e.A.link(href="#")
+                        +e.A.link(href="skype:nadezhda.shust")
                             +icon("skype", "sprite")
                             +e.DIV.text-block
                                 +e.SPAN.title Skype:
                                 +e.SPAN.text nadezhda.shust
                     +e.LI.item
-                        +e.A.link(href="#")
+                        +e.A.link(href="tel:+79267244554")
                             +icon("phone", "sprite")
                             +e.DIV.text-block
                                 +e.SPAN.text_phone +7 (926)724-45-54

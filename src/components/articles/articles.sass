@@ -4,32 +4,33 @@
   &__title-block
     +flex
     margin-bottom: 33px
-  &__list
+  ul
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-  &__item
+  li
     width: 615px
     border-radius: 20px
     box-shadow: 0px 10px 35px 0 rgba(10, 26, 25, 0.09)
     overflow: hidden
     margin-bottom: 30px
-  &__art-link
-    text-decoration: none
-    &:hover h5
-      color: $main-col
-  &__img
-    width: 100%
-    height: 195px
-    object-fit: cover
-  &__text-block
-    padding: 29px 35px 35px 35px
-  &__lil-title
-    margin-bottom: 16px
-    line-height: 1.5
-    transition: color .3s ease
-  &__date
-    text-transform: uppercase
+    a
+      text-decoration: none
+      &:hover h5
+        color: $main-col
+    img
+      width: 100%
+      height: 195px
+      object-fit: cover
+    div
+      padding: 29px 35px 35px 35px
+
+    h5
+      margin-bottom: 16px
+      line-height: 1.5
+      transition: color .3s ease
+    span
+      text-transform: uppercase
 
   &__btn-block
     margin-top: 30px
