@@ -5,8 +5,8 @@ function heroSlider() {
     asNavFor: '.hero-slider-img',
     arrows: false,
     dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     appendDots: '.hero-slider__dots',
     prevArrow: '<button type="button" class="slick-prev">' +
     '             <svg class="sprite__icon icon arr-prev">\n' +
