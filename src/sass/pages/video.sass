@@ -1,17 +1,25 @@
 .video
   padding: 84px 0
+  +r($note)
+    padding: 40px 0
   &__title
     margin-bottom: 33px
   ul
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    +r(1340)
+      margin-left: -30px
+      justify-content: center
   li
     width: 615px
     border-radius: 20px
     box-shadow: 0px 10px 35px 0 rgba(10, 26, 25, 0.09)
     overflow: hidden
-    margin-bottom: 30px
+    margin: 0 0 30px 0
+    +r(1340)
+      margin: 0 0 30px 30px
+      width: 500px
     div
       position: relative
     img
@@ -37,9 +45,15 @@
     h4
       padding: 29px 35px 35px 35px
       line-height: 1.5
+      +r(1340)
+        font-size: 14px
+      +r($mobile)
+        padding: 20px
 
   &__btn-block
     margin-top: 30px
+    +r($mobile)
+      margin-top: 0
   &__btn-load
     margin: auto
 

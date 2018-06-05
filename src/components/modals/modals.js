@@ -20,13 +20,7 @@ function modals () {
       }
     }
   });
-  // success
-  // -
-  // $('_').magnificPopup({
-  //   mainClass: 'my-mfp-animate',
-  //   removalDelay: 300
-  // });
-  // -
+
   // video
   $('.btn-play, .video li a, .review__slider_video a').magnificPopup({
     mainClass: 'my-mfp-video',

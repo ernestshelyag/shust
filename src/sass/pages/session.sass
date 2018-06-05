@@ -1,9 +1,11 @@
 .session
   padding: 84px 0
+  +r($note)
+    padding: 40px 0
 
   &__title
     margin-bottom: 30px
-  &__text
+  p
     font-size: 18px
   ul
     max-width: 1290px
@@ -11,6 +13,12 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    +r($wide)
+      max-width: 100%
+      justify-content: center
+      padding: 0 20px
+    +r(700)
+      padding: 0 5px
   li
     padding: 0 15px 30px 15px
     a

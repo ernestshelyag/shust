@@ -6,15 +6,38 @@
     background-repeat: no-repeat
     background-position: 100% center
     background-size: 55%
+    +r(1520)
+      background-position: 100% 0
+      background-size: contain
+    +r(920)
+      background-size: cover
+    +r($tablet)
+      height: auto
+
   &__info-block
     height: 100%
     display: flex
     align-items: center
     justify-content: space-between
+    +r(920)
+      background: rgba(#fff, .7)
+      min-width: 100%
+  &__text-block
+    +r(920)
+      padding: 0 0 0 30px
+    +r($tablet)
+      padding: 30px 0
+
   &__title
     margin-bottom: 29px
+    +r($tablet)
+      font-size: 20px
   ul
     max-width: 800px
+    +r($wide)
+      max-width: 700px
+    +r($note)
+      max-width: 600px
   li
     font-size: 18px
     margin-top: 19px
@@ -28,3 +51,19 @@
       background: $main-col
       top: 6px
       left: 0
+    +r(1520)
+      font-size: 16px
+      margin-top: 10px
+    +r(920)
+      color: #000
+      font-weight: 500
+    +r($tablet)
+      font-size: 14px
+    +r($mobile)
+      line-height: 1
+  &__btn
+    +r(1620)
+      position: relative
+      right: 100px
+    +r(920)
+      display: none

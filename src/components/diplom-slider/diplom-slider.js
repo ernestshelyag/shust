@@ -7,19 +7,33 @@ function diplomSlider () {
     appendArrows: '.diplom-slider__arrs',
     prevArrow: '<button type="button" class="slick-prev">' +
     '             <svg class="sprite__icon icon arr-prev">\n' +
-    '               <use xlink:href="img/sprite.svg#arr-prev"></use>\n' +
+    '               <use xlink:href="\'+sliderarrs+\'#arr-prev"></use>\n' +
     '             </svg>' +
     '           </button>',
     nextArrow: '<button type="button" class="slick-prev">' +
     '             <svg class="sprite__icon icon arr-next">\n' +
-    '               <use xlink:href="img/sprite.svg#arr-next"></use>\n' +
+    '               <use xlink:href="\'+sliderarrs+\'#arr-next"></use>\n' +
     '             </svg>' +
     '           </button>',
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        arrows: true
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 712,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 528,
+        settings: {
+          slidesToShow: 2
+        }
       }
-    }]
+    ]
   });
 }

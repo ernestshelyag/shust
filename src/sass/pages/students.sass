@@ -1,17 +1,31 @@
 .students
   padding-top: 85px
+  +r($note)
+    padding-top: 40px
 
   &__top-block
     margin-bottom: 90px
+    +r($note)
+      margin-bottom: 40px
   &__main-block
     background: $bg-gray
     padding: 48px 0 87px
+    +r($note)
+      padding: 40px 0
   &__cont
     display: flex
     justify-content: space-between
+    +r(860)
+      flex-direction: column
+  &__btn-list
+    +r(860)
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-bottom: 20px
   &__btn-item
     width: 358px
-    margin-bottom: 25px
+    margin: 0 0 25px 0
     +tr
     &:last-child
       margin-bottom: 0
@@ -22,6 +36,10 @@
     &.active
       background: $main-col-med
       color: #fff
+    +r(860)
+      margin: 0 10px 15px 10px
+      width: auto
+      flex-grow: 1
 
   // - - - - -
 
@@ -31,14 +49,20 @@
     border-radius: 20px
     box-shadow: 0 17px 35px 0 rgba(10, 26, 25, 0.07)
     margin-left: 30px
+    +r(860)
+      margin-left: 0
   &__box
     padding: 50px 60px
     display: none
     &.active
       display: block
+    +r($mobile)
+      padding: 20px 25px
   &__items-hiding
     margin-left: 30px
     display: none
+    +r($tablet)
+      margin-left: 0
 
   &__pdf-title
     display: inline-block
@@ -68,11 +92,25 @@
   &__item
     display: flex
     align-items: center
-    margin: 15px 0
+    margin: 25px 0
     font-size: 18px
+    position: relative
+    +r($tablet)
+      font-size: 14px
+      margin: 15px 0
     .pdf
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      margin: auto
       width: 22px
       height: 29px
       fill: $main-col
+      +r($tablet)
+        width: 15px
+        height: 17px
     span
-      padding-left: 20px
+      margin-left: 40px
+      +r($tablet)
+        margin-left: 30px

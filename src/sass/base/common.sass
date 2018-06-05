@@ -13,6 +13,10 @@ form
   border-radius: 50px
   width: 100%
   letter-spacing: 3px
+  +r(1625)
+    font-size: 14px
+  +r($note)
+    font-size: 12px
 
 .form-inp
   color: #fff
@@ -20,6 +24,8 @@ form
   border: solid 2px $form-border
   &:focus
     border: solid 2px #fff
+  +r($note)
+    padding: 15px 10px 15px 30px
 
 .form-btn
   color: $main-col
@@ -30,6 +36,8 @@ form
   text-transform: uppercase
   &:hover
     color: $main-col-dark
+  +r($note)
+    padding: 15px 0
 
 // titles
 
@@ -41,14 +49,26 @@ h1, h2, h3, h4, h5
   line-height: 1.1
 h1
   font-size: 40px
+  +r(1520)
+    font-size: 30px
+  +r($mobile)
+    font-size: 24px
 h2
   font-size: 30px
+  +r($note)
+    font-size: 24px
 h3
   font-size: 24px
+  +r($note)
+    font-size: 18px
 h4
   font-size: 18px
+  +r($note)
+    font-size: 16px
 h5
   font-size: 16px
+  +r($note)
+    font-size: 14px
 
 // svg-sprite
 
@@ -61,6 +81,8 @@ h5
 
 .breadcrumbs
   margin-bottom: 30px
+  +r($tablet)
+    margin-bottom: 20px
   a
     text-transform: uppercase
     font-size: 14px
@@ -85,6 +107,10 @@ svg
 
 p
   line-height: 1.44
+  +r($tablet)
+    font-size: 16px!important
+  +r($mobile)
+    font-size: 14px!important
 
 .btn
   width: 338px
@@ -117,6 +143,12 @@ p
     margin: auto
     right: 34px
     fill: $main-col
+    +r($note)
+      right: 15px
+  +r($note)
+    height: 45px
+    font-size: 10px
+    width: 250px
 
 .btn-dark
   height: 60px

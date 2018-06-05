@@ -1,6 +1,8 @@
 .questions
   padding: 85px 0
   background: $bg-gray
+  +r($note)
+    padding: 40px 0
   &__title
     margin-bottom: 50px
   li
@@ -19,6 +21,8 @@
       top: 22px
       transform: rotate(45deg)
       transition: right 1s ease
+      +r($note)
+        top: 15px
     &:before
       border-bottom: solid 2px $main-col
     &:after
@@ -37,8 +41,16 @@
       &:after
         border-right: solid 2px #fff
         right: 44px
+  h5
+    padding-right: 30px
+    +r($note)
+      font-size: 12px
+    +r($mobile-s)
+      font-size: 10px
   p
     display: none
+    +r($mobile)
+      font-size: 12px
 
   &__btn-block
     margin-top: 50px

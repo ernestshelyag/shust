@@ -7,20 +7,28 @@ function reviewSliders () {
     appendArrows: '.review__arrs_v',
     prevArrow: '<button type="button" class="slick-prev">' +
     '             <svg class="sprite__icon icon arr-prev">\n' +
-    '               <use xlink:href="img/sprite.svg#arr-prev"></use>\n' +
+    '               <use xlink:href="\'+sliderarrs+\'#arr-prev"></use>\n' +
     '             </svg>' +
     '           </button>',
     nextArrow: '<button type="button" class="slick-prev">' +
     '             <svg class="sprite__icon icon arr-next">\n' +
-    '               <use xlink:href="img/sprite.svg#arr-next"></use>\n' +
+    '               <use xlink:href="\'+sliderarrs+\'#arr-next"></use>\n' +
     '             </svg>' +
     '           </button>',
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        arrows: true
+    responsive: [
+      {
+        breakpoint: 1045,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 568,
+        settings: {
+          slidesToShow: 1
+        }
       }
-    }]
+    ]
   });
   $('.review__slider_text').slick({
     slidesToShow: 2,
@@ -30,18 +38,18 @@ function reviewSliders () {
     appendArrows: '.review__arrs_t',
     prevArrow: '<button type="button" class="slick-prev">' +
     '             <svg class="sprite__icon icon arr-prev">\n' +
-    '               <use xlink:href="img/sprite.svg#arr-prev"></use>\n' +
+    '               <use xlink:href="\'+sliderarrs+\'#arr-prev"></use>\n' +
     '             </svg>' +
     '           </button>',
     nextArrow: '<button type="button" class="slick-prev">' +
     '             <svg class="sprite__icon icon arr-next">\n' +
-    '               <use xlink:href="img/sprite.svg#arr-next"></use>\n' +
+    '               <use xlink:href="\'+sliderarrs+\'#arr-next"></use>\n' +
     '             </svg>' +
     '           </button>',
     responsive: [{
-      breakpoint: 767,
+      breakpoint: 960,
       settings: {
-        arrows: true
+        slidesToShow: 1
       }
     }]
   });

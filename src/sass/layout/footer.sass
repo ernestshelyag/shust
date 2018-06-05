@@ -1,4 +1,29 @@
 .footer
+  .logo-block
+    +r(1820)
+      display: none
+
+  +r(1755)
+    .layout-info__item_address .layout-info__link
+      margin: 0
+    .layout-info__text-block_address
+      padding-left: 0
+  +r(1435)
+    .layout-info__text-block_address
+      padding-left: 20px
+    .layout-info__item
+      &_mail, &_skype
+        display: none
+    .layout-info__text_phone
+      display: block
+  +r(820)
+    .layout-info__list
+      justify-content: center
+    .layout-info__item
+      display: none
+      &_socials
+        display: flex
+
 
   &__footer-bottom
     padding: 0 75px
@@ -12,10 +37,21 @@
     justify-content: space-between
     align-items: flex-start
     border-bottom: solid 1px #E8EEEE
+    +r($note)
+      flex-direction: column
+      height: auto
+      align-items: center
+      padding-top: 30px
+    +r($tablet)
+      padding-top: 10px
   &__all-links
     flex-grow: 1
     display: flex
     justify-content: space-between
+    +r($note)
+      width: 100%
+    +r($tablet)
+      display: none
   &__link-col
     display: flex
     flex-direction: column
@@ -26,12 +62,20 @@
     font-size: 12px
     font-weight: 700
     padding-bottom: 20px
+    +r(1200)
+      font-size: 10px
 
   // - - - - -
 
   &__copy-block
     width: 275px
     margin-left: 135px
+    +r($wide)
+      margin-left: 30px
+    +r($note)
+      margin-left: 0
+      text-align: center
+      padding: 20px 0
   &__m-block
     +flex
     text-decoration: none
@@ -58,3 +102,5 @@
 
   &__info-block
     height: 115px
+    +r(820)
+      height: 50px

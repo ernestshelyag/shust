@@ -2,11 +2,32 @@
 
   .therapy__cont
     height: 535px
+    background-size: contain
+    +r(1000)
+      background-size: cover
   .person__info-block
     justify-content: space-between
+    +r(917)
+      flex-direction: column-reverse
+  .person__text-block
+    +r(917)
+      width: auto
+  .person__btn
+    +r(1680)
+      position: relative
+      left: 100px
+    +r(1055)
+      left: 0
+    +r(917)
+      margin-top: 20px
+  .format__cont
+    +r($mobile)
+      margin: 0
 
   &__text-block
     margin: 65px 0 90px
+    +r($tablet)
+      margin: 40px 0
   &__text
     font-size: 18px
     margin: 20px 0
