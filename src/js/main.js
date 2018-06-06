@@ -13,5 +13,6 @@ $(function () {
   questions();
   modals();
   sendForm();
+  select();
 });
 

@@ -38,4 +38,66 @@
                 span content 5
             +e.DIV.box(data-content="6")
                 span content 6
+.test-modals-example
+    h1 Example
+    +b.DIV.modal-test.wrp
+        +e.H1.title Тест ММИЛ
+        +e.FORM.form_main-info
+            +e.DIV.block
+                +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше имя")
+                +e.INPUT.input_work.form-inp(type="text" name="work" placeholder="Работа")
+            +e.DIV.block
+                +e.INPUT.input_age.form-inp(type="text" name="age" placeholder="Ваш возраст")
+                +b.DIV.custom-select
+                    +e.SELECT.select(name="education")
+                        option(value="0") Образование
+                        option(value="1") Нет
+                        option(value="2") Среднее
+                        option(value="3") Среднее специальное
+                        option(value="4") Неоконченное высшее
+                        option(value="5") Высшее
+            +e.DIV.block
+                +b.DIV.custom-radio
+                    +e.H5.title Ваш пол
+                    +e.LABEL.label Мужской
+                        +e.INPUT.input(type="radio" name="radio")
+                        +e.SPAN.mask
+                    +e.LABEL.label Женский
+                        +e.INPUT.input(type="radio" name="radio")
+                        +e.SPAN.mask
+                +e.A.btn.btn
+                    span Далее
+                    +icon("arr-next", "sprite")
+
+    +b.DIV.modal-test.wrp
+        +e.H1.title Вопрос 1 из 7892
+        +e.FORM.form
+            +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolor ipsa ipsam ipsum, itaque perferendis perspiciatis quae sapiente ullam voluptatem.
+            +e.answer-block
+                +b.DIV.custom-radio
+                    +e.LABEL.label Верно
+                        +e.INPUT.input(type="radio" name="radio")
+                        +e.SPAN.mask
+                    +e.LABEL.label Не верно
+                        +e.INPUT.input(type="radio" name="radio")
+                        +e.SPAN.mask
+                +e.DIV.btn-block
+                    +e.A.btn_prev.btn
+                        span Назад
+                        +icon("arr-prev", "sprite")
+                    +e.A.btn.btn
+                        span Далее
+                        +icon("arr-next", "sprite")
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -447,6 +447,66 @@
           </div>
         </div>
       </section>
+      <div class="test-modals-example">
+        <h1>Example</h1>
+        <div class="modal-test wrp">
+          <h1 class="modal-test__title">Тест ММИЛ
+          </h1>
+          <form class="modal-test__form modal-test__form_main-info">
+            <div class="modal-test__block"><input class="modal-test__input modal-test__input_name form-inp" type="text" name="name" placeholder="Ваше имя"/><input class="modal-test__input modal-test__input_work form-inp" type="text" name="work" placeholder="Работа"/>
+            </div>
+            <div class="modal-test__block"><input class="modal-test__input modal-test__input_age form-inp" type="text" name="age" placeholder="Ваш возраст"/>
+              <div class="custom-select">
+                <select class="custom-select__select" name="education">
+                  <option value="0">Образование</option>
+                  <option value="1">Нет</option>
+                  <option value="2">Среднее</option>
+                  <option value="3">Среднее специальное</option>
+                  <option value="4">Неоконченное высшее</option>
+                  <option value="5">Высшее</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-test__block">
+              <div class="custom-radio">
+                <h5 class="custom-radio__title">Ваш пол
+                </h5>
+                <label class="custom-radio__label">Мужской<input class="custom-radio__input" type="radio" name="radio"/><span class="custom-radio__mask"></span>
+                </label>
+                <label class="custom-radio__label">Женский<input class="custom-radio__input" type="radio" name="radio"/><span class="custom-radio__mask"></span>
+                </label>
+              </div><a class="modal-test__btn btn"><span>Далее</span>
+              <svg class="sprite__icon icon arr-next">
+                <use xlink:href="img/sprite.svg#arr-next"></use>
+              </svg></a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-test wrp">
+          <h1 class="modal-test__title">Вопрос 1 из 7892
+          </h1>
+          <form class="modal-test__form">
+            <p class="modal-test__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolor ipsa ipsam ipsum, itaque perferendis perspiciatis quae sapiente ullam voluptatem.
+            </p>
+            <div class="modal-test__answer-block">
+              <div class="custom-radio">
+                <label class="custom-radio__label">Верно<input class="custom-radio__input" type="radio" name="radio"/><span class="custom-radio__mask"></span>
+                </label>
+                <label class="custom-radio__label">Не верно<input class="custom-radio__input" type="radio" name="radio"/><span class="custom-radio__mask"></span>
+                </label>
+              </div>
+              <div class="modal-test__btn-block"><a class="modal-test__btn modal-test__btn_prev btn"><span>Назад</span>
+                <svg class="sprite__icon icon arr-prev">
+                  <use xlink:href="img/sprite.svg#arr-prev"></use>
+                </svg></a><a class="modal-test__btn btn"><span>Далее</span>
+                <svg class="sprite__icon icon arr-next">
+                  <use xlink:href="img/sprite.svg#arr-next"></use>
+                </svg></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
       <section class="review">
         <div class="review__cont">
           <h1 class="review__title wrp">Отзывы пациентов
@@ -737,16 +797,37 @@
       </div>
     </div>
     <!-- test modal-->
-    <div class="modal modal_test mfp-hide" id="test-popup-item-1">
-      <h1 class="modal__test-title">Тест ММИЛ
+    <div class="modal-test wrp mfp-hide" id="test-popup-item-1">
+      <h1 class="modal-test__title">Тест ММИЛ
       </h1>
-      <form class="modal__form">
-        <p class="modal__test-text">Test text
-        </p>
-        <button class="modal__test-button form-btn" type="button">Назад
-        </button>
-        <button class="modal__test-button form-btn" type="button">Далее
-        </button>
+      <form class="modal-test__form modal-test__form_main-info">
+        <div class="modal-test__block"><input class="modal-test__input modal-test__input_name form-inp" type="text" name="name" placeholder="Ваше имя"/><input class="modal-test__input modal-test__input_work form-inp" type="text" name="work" placeholder="Работа"/>
+        </div>
+        <div class="modal-test__block"><input class="modal-test__input modal-test__input_age form-inp" type="text" name="age" placeholder="Ваш возраст"/>
+          <div class="custom-select">
+            <select class="custom-select__select" name="education">
+              <option value="0">Образование</option>
+              <option value="1">Нет</option>
+              <option value="2">Среднее</option>
+              <option value="3">Среднее специальное</option>
+              <option value="4">Неоконченное высшее</option>
+              <option value="5">Высшее</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-test__block">
+          <div class="custom-radio">
+            <h5 class="custom-radio__title">Ваш пол
+            </h5>
+            <label class="custom-radio__label">Мужской<input class="custom-radio__input" type="radio" name="radio"/><span class="custom-radio__mask"></span>
+            </label>
+            <label class="custom-radio__label">Женский<input class="custom-radio__input" type="radio" name="radio"/><span class="custom-radio__mask"></span>
+            </label>
+          </div><a class="modal-test__btn btn"><span>Далее</span>
+          <svg class="sprite__icon icon arr-next">
+            <use xlink:href="img/sprite.svg#arr-next"></use>
+          </svg></a>
+        </div>
       </form>
     </div>
     <script src="js/vendors.min.js"></script>
