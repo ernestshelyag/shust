@@ -1,5 +1,5 @@
 function questions () {
-  $('.questions li').click(function () {
+  $('body').on('click', '.questions li', function () {
     // -
     $('.questions li').not($(this)).removeClass('active');
     $('.questions p').slideUp(600);

@@ -27,12 +27,12 @@ function sendForm () {
 
   // - - - - -
 
-  $('input[name*="phone"]').inputmask({
+  $('.modal__input_phone, .callback__input_phone, .contacts__input_phone').inputmask({
     mask: '+7(999)999-99-99',
     showMaskOnHover: false
   });
 
-  $('input[name*="phone"]').on('input', function () {
+  $('.modal__input_phone, .callback__input_phone, .contacts__input_phone').on('input', function () {
     var pattern = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{3,10}$/;
     if (pattern.test($(this).val())) {
       $(this).parent().removeClass('form-err');

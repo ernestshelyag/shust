@@ -38,7 +38,7 @@ function modals () {
     }
   });
   // video
-  $('.btn-play, .video li a, .review__slider_video a').magnificPopup({
+  $('.btn-play, body .video li a, .review__slider_video a').magnificPopup({
     mainClass: 'my-mfp-video',
     removalDelay: 300,
     disableOn: 700,
