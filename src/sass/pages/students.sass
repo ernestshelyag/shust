@@ -54,8 +54,10 @@
   &__box
     padding: 50px 60px
     display: none
+    flex-direction: column
+    align-items: flex-start
     &.active
-      display: block
+      display: flex
     +r($mobile)
       padding: 20px 25px
   &__items-hiding
@@ -68,6 +70,7 @@
     display: inline-block
     margin: 30px 0 20px
     cursor: pointer
+
     +tr
     +psevdo
     &:before, &:after
