@@ -1,2 +1,41 @@
 +b.SECTION.test
-    span test-block..
+    +e.DIV.cont.wrp
+        +e.H1.title Пройти тестирование
+        +e.UL.btn-block
+            +e.LI.btn-item.btn.active(data-tab="1") ММИЛ
+            +e.LI.btn-item.btn(data-tab="2") МИС
+            +e.LI.btn-item.btn(data-tab="3") УСК
+            +e.LI.btn-item.btn(data-tab="4") 16ЛФ
+            +e.LI.btn-item.btn(data-tab="5") Тест Томаса
+            +e.LI.btn-item.btn(data-tab="6") ЛИРИ
+        +b.DIV.test-block
+            +e.DIV.box.active(data-content="1")
+                h2 ММИЛ
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur blanditiis consequatur distinctio dolore earum facere fugit laborum nemo neque nihil odio, optio saepe, sit velit vero voluptatibus. Aperiam eaque eligendi minima odit quas similique ullam vitae. Animi, dicta expedita harum illum, laborum, magnam maxime molestias officiis possimus quae quaerat.
+                ul
+                    li
+                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?
+                    li
+                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?
+                    li
+                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?
+                    li
+                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?
+                    li
+                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?
+                    li
+                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?
+                +e.A.btn.btn(href="#test-popup-item-1")
+                    span Начать тест
+                    +icon("arr-next", "sprite")
+            +e.DIV.box(data-content="2")
+                span content 2
+            +e.DIV.box(data-content="3")
+                span content 3
+            +e.DIV.box(data-content="4")
+                span content 4
+            +e.DIV.box(data-content="5")
+                span content 5
+            +e.DIV.box(data-content="6")
+                span content 6
+

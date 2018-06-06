@@ -400,7 +400,52 @@
           </form>
         </div>
       </section>
-      <section class="test"><span>test-block..</span>
+      <section class="test">
+        <div class="test__cont wrp">
+          <h1 class="test__title">Пройти тестирование
+          </h1>
+          <ul class="test__btn-block">
+            <li class="test__btn-item btn active" data-tab="1">ММИЛ
+            </li>
+            <li class="test__btn-item btn" data-tab="2">МИС
+            </li>
+            <li class="test__btn-item btn" data-tab="3">УСК
+            </li>
+            <li class="test__btn-item btn" data-tab="4">16ЛФ
+            </li>
+            <li class="test__btn-item btn" data-tab="5">Тест Томаса
+            </li>
+            <li class="test__btn-item btn" data-tab="6">ЛИРИ
+            </li>
+          </ul>
+          <div class="test-block">
+            <div class="test-block__box active" data-content="1">
+              <h2>ММИЛ</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur blanditiis consequatur distinctio dolore earum facere fugit laborum nemo neque nihil odio, optio saepe, sit velit vero voluptatibus. Aperiam eaque eligendi minima odit quas similique ullam vitae. Animi, dicta expedita harum illum, laborum, magnam maxime molestias officiis possimus quae quaerat.</p>
+              <ul>
+                <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?</span></li>
+                <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?</span></li>
+                <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?</span></li>
+                <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?</span></li>
+                <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?</span></li>
+                <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores autem commodi culpa ea esse et molestias perferendis possimus recusandae?</span></li>
+              </ul><a class="test-block__btn btn" href="#test-popup-item-1"><span>Начать тест</span>
+              <svg class="sprite__icon icon arr-next">
+                <use xlink:href="img/sprite.svg#arr-next"></use>
+              </svg></a>
+            </div>
+            <div class="test-block__box" data-content="2"><span>content 2</span>
+            </div>
+            <div class="test-block__box" data-content="3"><span>content 3</span>
+            </div>
+            <div class="test-block__box" data-content="4"><span>content 4</span>
+            </div>
+            <div class="test-block__box" data-content="5"><span>content 5</span>
+            </div>
+            <div class="test-block__box" data-content="6"><span>content 6</span>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="review">
         <div class="review__cont">
@@ -690,6 +735,19 @@
         <h1 class="modal__title">Ваша заявка принята
         </h1><span class="modal__text">Вам перезвонят в<br>течении 2 минут</span>
       </div>
+    </div>
+    <!-- test modal-->
+    <div class="modal modal_test mfp-hide" id="test-popup-item-1">
+      <h1 class="modal__test-title">Тест ММИЛ
+      </h1>
+      <form class="modal__form">
+        <p class="modal__test-text">Test text
+        </p>
+        <button class="modal__test-button form-btn" type="button">Назад
+        </button>
+        <button class="modal__test-button form-btn" type="button">Далее
+        </button>
+      </form>
     </div>
     <script src="js/vendors.min.js"></script>
     <script src="js/main.min.js"></script>
