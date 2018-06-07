@@ -3,7 +3,7 @@
         +e.DIV.text-block
             +e.SPAN.title Оформите заявку сейчас и получите 10% скидку на первую встречу
             +e.SPAN.text Наш менеджер перезвонит вам в течение 2 минут
-        +e.FORM.form_callback
+        +e.FORM.form_callback(data-url="/")
             input(type="hidden" name="hidden" value="callback")
             +e.DIV.lev
                 +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")

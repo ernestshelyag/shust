@@ -1,7 +1,7 @@
 // enter & reg modals
 
 +b.DIV.modal.mfp-hide#enter-popup
-    +e.FORM.form#form-enter
+    +e.FORM.form#form-enter(data-url="123")
         +e.H1.title Войти
         input(type="hidden" name="hidden" value="enter-modal")
         +e.DIV.lev
@@ -12,7 +12,7 @@
         +e.A.reg(href="#reg-popup") Регистрация
 
 +b.DIV.modal.mfp-hide#reg-popup
-    +e.FORM.form_reg#form-reg
+    +e.FORM.form_reg#form-reg(data-url="/")
         +e.H1.title Регистрация
         input(type="hidden" name="hidden" value="reg-modal")
         +e.DIV.lev
@@ -26,7 +26,7 @@
 // hero-slider modals
 
 +b.DIV.modal.mfp-hide#hero-slider-popup-slide-1
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="hero-slider-modal-1")
         +e.DIV.lev
@@ -36,7 +36,7 @@
         +e.BUTTON.button.form-btn(type="submit") Записаться
 
 +b.DIV.modal.mfp-hide#hero-slider-popup-slide-2
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="hero-slider-modal-2")
         +e.DIV.lev
@@ -46,7 +46,7 @@
         +e.BUTTON.button.form-btn(type="submit") Записаться
 
 +b.DIV.modal.mfp-hide#hero-slider-popup-slide-3
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="hero-slider-modal-3")
         +e.DIV.lev
@@ -58,7 +58,7 @@
 // price-block modals
 
 +b.DIV.modal.mfp-hide#price-popup-top
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="price-modal-top")
         +e.DIV.lev
@@ -68,7 +68,7 @@
         +e.BUTTON.button.form-btn(type="submit") Записаться
 
 +b.DIV.modal.mfp-hide#price-popup-item-1
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="price-modal-item-1")
         +e.DIV.lev
@@ -78,7 +78,7 @@
         +e.BUTTON.button.form-btn(type="submit") Записаться
 
 +b.DIV.modal.mfp-hide#price-popup-item-2
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="price-modal-item-2")
         +e.DIV.lev
@@ -88,7 +88,7 @@
         +e.BUTTON.button.form-btn(type="submit") Записаться
 
 +b.DIV.modal.mfp-hide#price-popup-item-3
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="price-modal-item-3")
         +e.DIV.lev
@@ -98,7 +98,7 @@
         +e.BUTTON.button.form-btn(type="submit") Записаться
 
 +b.DIV.modal.mfp-hide#price-popup-item-4
-    +e.FORM.form_appointment
+    +e.FORM.form_appointment(data-url="/")
         +e.H1.title Записаться
         input(type="hidden" name="hidden" value="price-modal-item-4")
         +e.DIV.lev
@@ -121,7 +121,7 @@
 
 +b.DIV.modal-test.wrp.mfp-hide#test-popup-item-1
     +e.H1.title Тест ММИЛ
-    +e.FORM.form_main-info
+    +e.FORM.form_main-info(data-url="/")
         +e.DIV.block
             +e.INPUT.input_name.form-inp(type="text" name="name" placeholder="Ваше имя")
             +e.INPUT.input_work.form-inp(type="text" name="work" placeholder="Работа")

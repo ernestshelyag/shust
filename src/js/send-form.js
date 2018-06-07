@@ -71,7 +71,7 @@ function sendForm () {
     // sending form
     if (!errorFlag) {
       $.ajax({
-        url: "/",
+        url: this.dataset.url,
         type: "post",
         dataType: "json",
         data: data,
@@ -80,16 +80,6 @@ function sendForm () {
           $('#form-enter')[0].reset();
           mail.parent().removeClass('.form-correct');
           pass.parent().removeClass('.form-correct');
-          // - - - - -
-          console.log('видимо дальше запрос на сервер - проверка логин-пароля и вход');
-
-          // можно добавить попап о том что все прошло успешно
-
-          // $.magnificPopup.open({
-          //   items: {
-          //     src: '#success-popup'
-          //   }
-          // });
         }
       });
     }
@@ -127,7 +117,7 @@ function sendForm () {
     // sending form
     if (!errorFlag) {
       $.ajax({
-        url: "/",
+        url: this.dataset.url,
         type: "post",
         dataType: "json",
         data: data,
@@ -137,16 +127,6 @@ function sendForm () {
           name.parent().removeClass('.form-correct');
           mail.parent().removeClass('.form-correct');
           pass.parent().removeClass('.form-correct');
-          // - - - - -
-          console.log('видимо дальше запрос на сервер - регистрация');
-
-          // можно добавить попап о том что все прошло успешно
-
-          // $.magnificPopup.open({
-          //   items: {
-          //     src: '#success-popup'
-          //   }
-          // });
         }
       });
     }
@@ -180,7 +160,7 @@ function sendForm () {
     // sending form
     if (!errorFlag) {
       $.ajax({
-        url: "/",
+        url: this.dataset.url,
         type: "post",
         dataType: "json",
         data: data,
@@ -224,7 +204,7 @@ function sendForm () {
     // sending form
     if (!errorFlag) {
       $.ajax({
-        url: "/",
+        url: this.dataset.url,
         type: "post",
         dataType: "json",
         data: data,
@@ -271,7 +251,7 @@ function sendForm () {
     // sending form
     if (!errorFlag) {
       $.ajax({
-        url: "/",
+        url: this.dataset.url,
         type: "post",
         dataType: "json",
         data: data,
