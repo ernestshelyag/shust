@@ -3,6 +3,9 @@ $browser-context: 16 // Default
 @function em($pixels, $context: $browser-context)
   @return #{$pixels/$context}em
 
+@function rem($size)
+  @return ($size/16)+rem
+
 *, *:before, *:after
   -moz-box-sizing: border-box
   box-sizing: border-box

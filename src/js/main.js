@@ -4,15 +4,25 @@ $(window).on('load', function () {
 });
 
 $(function () {
-  header();
-  heroSlider();
-  workWithSlider();
-  reviewSliders();
-  diplomSlider();
-  students();
-  questions();
-  modals();
-  sendForm();
-  select();
-});
 
+  header();
+
+  heroSlider();
+
+  workWithSlider();
+
+  reviewSliders();
+
+  diplomSlider();
+
+  students();
+
+  questions();
+
+  modals();
+
+  sendForm();
+
+  select();
+
+});

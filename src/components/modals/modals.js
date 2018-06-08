@@ -41,8 +41,17 @@ function modals () {
   $('.btn-play, body .video li a, .review__slider_video a').magnificPopup({
     mainClass: 'my-mfp-video',
     removalDelay: 300,
-    disableOn: 700,
     type: 'iframe',
     preloader: false
   });
+  // hipnosis
+  $('.footer__link_h, .sidebar__link_h').click( function () {
+    $.magnificPopup.open({
+      items: {
+        src: '#hipnosis-popup'
+      }
+    });
+  });
+
+
 }

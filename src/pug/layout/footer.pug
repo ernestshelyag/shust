@@ -5,7 +5,7 @@
             +e.DIV.text-block
                 +e.SPAN.title Остались вопросы? Задайте вопросы нашему менеджеру
                 +e.SPAN.text Вам перезвонят в течение 2 минут
-            +e.FORM.form_callback
+            +e.FORM.form_callback(data-url="/mail.php")
                 input(type="hidden" name="hidden" value="callback")
                 +e.DIV.lev
                     +e.INPUT.input_phone.form-inp(type="text" name="phone" placeholder="Ваш телефон")
@@ -22,7 +22,7 @@
                 +e.DIV.link-col
                     +e.A.link(href="about-session.html") Как проходят сеансы
                     +e.A.link(href="questions.html") Частые вопросы
-                    +e.A.link(href="single-article.html") Разновидности гипноза
+                    +e.A.link_h Разновидности гипноза
                 +e.DIV.link-col
                     +e.A.link(href="session.html") Сеансы
                     +e.A.link(href="students.html") Студентам
@@ -33,17 +33,18 @@
                     +e.A.link(href="review-page.html") Отзывы
                 +e.DIV.link-col
                     +e.A.link(href="articles-page.html") Полезные статьи
-                    +e.A.link(href="articles-page.html") Блог
+                    +e.A.link(href="single-article.html") Блог
                     +e.A.link(href="contacts.html") Контакты
             +e.DIV.copy-block
                 +e.A.m-block(href="https://markello.ru/" target="_blank")
                     +icon("markello", "sprite")
                     +e.SPAN.m-text_name Markello
                     +e.SPAN.m-text - made with love
-                +e.SPAN.copy
+                +e.A.copy(href="privacy-policy.html")
                     | © 2009-2016 Надежда Шуст
                     br
                     | Политика конфиденциальности
+                +e.A.agreement(href="agreement.html") Публичная оферта
 
         +e.DIV.info-block
             +b.DIV.layout-info

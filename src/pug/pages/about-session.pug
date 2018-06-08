@@ -1,7 +1,7 @@
 extends ../template
 
 block variables
-    - var title = 'about session'
+    - var title = 'About session'
     - var bodyFlex = false
 
 block content
@@ -37,7 +37,7 @@ block content
                             +e.li.item
                                 +e.A.link(href="about-session.html") Как проходят сеансы
                             +e.li.item
-                                +e.A.link(href="single-article.html") Разновидности гипноза
+                                +e.A.link_h Разновидности гипноза
                             +e.li.item
                                 +e.A.link(href="video.html") Видео
                 +e.NAV.nav
@@ -84,7 +84,14 @@ block content
             +e.NAV.nav
                 +e.A.link(href="session.html") Сеансы
                 +e.A.link.active(href="about-session.html") Как проходят сеансы
-                +e.A.link(href="single-article.html") Разновидности гипноза
+                +e.DIV.link_hipnosis Разновидности гипноза
+                    +e.UL.list-hidden
+                        li
+                            a(href="single-article.html") Гипноз 1
+                        li
+                            a(href="single-article.html") Гипноз 2
+                        li
+                            a(href="single-article.html") Гипноз 3
                 +e.A.link(href="video.html") Видео
 
     // header end

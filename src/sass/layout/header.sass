@@ -6,6 +6,8 @@
   margin: auto
   z-index: 1000
   background: #fff
+  +r(570)
+    border-bottom: solid 2px $main-col
 
 .header-top
   padding: 0 75px
@@ -66,6 +68,7 @@
       flex-direction: column
       height: auto
       align-items: center
+      padding-bottom: 15px
 
 // - - - - -
 
@@ -108,6 +111,33 @@
         border-left: none
     +r(1820)
       font-size: 12px
+    &_hipnosis
+      position: relative
+      cursor: pointer
+      &.active
+        border-left: solid 1px $main-col
+        border-right: solid 1px $main-col
+  &__list-hidden
+    display: none
+    position: absolute
+    width: 100%
+    top: 50px
+    left: 0
+    color: #000
+    li
+      height: 52px
+      border-top: solid 1px rgba(#000, .1)
+      background: $main-col
+      &:hover
+        background: $main-col-med
+    a
+      color: #fff
+      text-decoration: none
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
 
 // burger
 
@@ -197,3 +227,5 @@
     &.active
       opacity: 1
       color: #000
+    +r($mobile-s)
+      font-size: 10px
