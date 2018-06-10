@@ -23,6 +23,6 @@ $(function () {
 
   sendForm();
 
-  select();
+  // select();
 
 });
