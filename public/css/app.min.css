@@ -2746,9 +2746,10 @@ p {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start; }
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center; }
       .callback__text-block {
         margin-bottom: 20px; }
       .callback__title {
@@ -2932,11 +2933,6 @@ p {
       height: 350px; }
     .callback {
       padding: 30px 0; }
-      .callback__wrp {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        text-align: center; }
       .callback__title {
         font-size: 14px; }
       .callback__text {
