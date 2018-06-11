@@ -38,12 +38,23 @@ function modals () {
     }
   });
   // video
-  $('.btn-play, body .video li a, .review__slider_video a').magnificPopup({
+  $('.btn-play, .review__slider_video a').magnificPopup({
     mainClass: 'my-mfp-video',
     removalDelay: 300,
     type: 'iframe',
     preloader: false
   });
+
+  $('body').on('click', '.video li a', function (e) {
+    e.preventDefault();
+    $(this).magnificPopup({
+      mainClass: 'my-mfp-video',
+      removalDelay: 300,
+      type: 'iframe',
+      preloader: false
+    });
+  });
+
   // hipnosis
   $('.footer__link_h, .sidebar__link_h').click( function () {
     $.magnificPopup.open({
