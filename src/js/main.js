@@ -26,3 +26,8 @@ $(function () {
   // select();
 
 });
+
+$(function() {
+  var iframe = $('#ourframe', parent.document.body);
+  iframe.height($(document.body).height());
+});
