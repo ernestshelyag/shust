@@ -74,14 +74,12 @@ function sendForm () {
         url: this.dataset.url,
         type: "post",
         dataType: "json",
-        data: data,
-        success: function () {
-          // clean form after send
-          $('#form-enter')[0].reset();
-          mail.parent().removeClass('.form-correct');
-          pass.parent().removeClass('.form-correct');
-        }
+        data: data
       });
+      // clean form after send
+      $('#form-enter')[0].reset();
+      mail.parent().removeClass('.form-correct');
+      pass.parent().removeClass('.form-correct');
     }
   });
 
@@ -120,15 +118,13 @@ function sendForm () {
         url: this.dataset.url,
         type: "post",
         dataType: "json",
-        data: data,
-        success: function () {
-          // clean form after send
-          $('#form-reg')[0].reset();
-          name.parent().removeClass('.form-correct');
-          mail.parent().removeClass('.form-correct');
-          pass.parent().removeClass('.form-correct');
-        }
+        data: data
       });
+      // clean form after send
+      $('#form-reg')[0].reset();
+      name.parent().removeClass('.form-correct');
+      mail.parent().removeClass('.form-correct');
+      pass.parent().removeClass('.form-correct');
     }
   });
 
@@ -163,18 +159,16 @@ function sendForm () {
         url: this.dataset.url,
         type: "post",
         dataType: "json",
-        data: data,
-        success: function () {
-          // clean form after send
-          $('.modal__form_appointment')[0].reset();
-          name.parent().removeClass('.form-correct');
-          phone.parent().removeClass('.form-correct');
-          // - - - - -
-          $.magnificPopup.open({
-            items: {
-              src: '#success-popup'
-            }
-          });
+        data: data
+      });
+      // clean form after send
+      $('.modal__form_appointment')[0].reset();
+      name.parent().removeClass('.form-correct');
+      phone.parent().removeClass('.form-correct');
+      // - - - - -
+      $.magnificPopup.open({
+        items: {
+          src: '#success-popup'
         }
       });
     }
@@ -207,17 +201,15 @@ function sendForm () {
         url: this.dataset.url,
         type: "post",
         dataType: "json",
-        data: data,
-        success: function () {
-          // clean form after send
-          $('.callback__form_callback')[0].reset();
-          phone.parent().removeClass('.form-correct');
-          // - - - - -
-          $.magnificPopup.open({
-            items: {
-              src: '#success-popup'
-            }
-          });
+        data: data
+      });
+      // clean form after send
+      $('.callback__form_callback')[0].reset();
+      phone.parent().removeClass('.form-correct');
+      // - - - - -
+      $.magnificPopup.open({
+        items: {
+          src: '#success-popup'
         }
       });
     }
@@ -254,18 +246,16 @@ function sendForm () {
         url: this.dataset.url,
         type: "post",
         dataType: "json",
-        data: data,
-        success: function () {
-          // clean form after send
-          $('.contacts__form')[0].reset();
-          name.parent().removeClass('.form-correct');
-          phone.parent().removeClass('.form-correct');
-          // - - - - -
-          $.magnificPopup.open({
-            items: {
-              src: '#success-popup'
-            }
-          });
+        data: data
+      });
+      // clean form after send
+      $('.contacts__form')[0].reset();
+      name.parent().removeClass('.form-correct');
+      phone.parent().removeClass('.form-correct');
+      // - - - - -
+      $.magnificPopup.open({
+        items: {
+          src: '#success-popup'
         }
       });
     }

@@ -28,6 +28,6 @@ $(function () {
 });
 
 $(function() {
-  var iframe = $('#ourframe', parent.document.body);
-  iframe.height($(document.body).height());
+  var ass = $('#ourframe').contents().find('body').height();
+  console.log(ass);
 });
