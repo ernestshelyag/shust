@@ -49,7 +49,7 @@ function sendForm () {
     var mail = $(this).find('.modal__input_mail');
     var pass = $(this).find('.modal__input_pass');
     var errorFlag = false;
-    var data = $(this).serializeArray();
+    var data = $(this).serialize();
     var validateMail = function () {
       if (mail.parent().hasClass('form-correct')) {
         return true;
@@ -73,7 +73,6 @@ function sendForm () {
       $.ajax({
         url: this.dataset.url,
         type: "post",
-        dataType: "json",
         data: data
       });
       // clean form after send
@@ -90,7 +89,7 @@ function sendForm () {
     var mail = $(this).find('.modal__input_mail');
     var pass = $(this).find('.modal__input_pass');
     var errorFlag = false;
-    var data = $(this).serializeArray();
+    var data = $(this).serialize();
     var validateMail = function () {
       if (mail.parent().hasClass('form-correct')) {
         return true;
@@ -117,7 +116,6 @@ function sendForm () {
       $.ajax({
         url: this.dataset.url,
         type: "post",
-        dataType: "json",
         data: data
       });
       // clean form after send
@@ -134,7 +132,7 @@ function sendForm () {
     var name = $(this).find('.modal__input_name');
     var phone = $(this).find('.modal__input_phone');
     var errorFlag = false;
-    var data = $(this).serializeArray();
+    var data = $(this).serialize();
     var validatePhone = function () {
       if (phone.parent().hasClass('form-correct')) {
         return true;
@@ -158,7 +156,6 @@ function sendForm () {
       $.ajax({
         url: this.dataset.url,
         type: "post",
-        dataType: "json",
         data: data
       });
       // clean form after send
@@ -179,7 +176,7 @@ function sendForm () {
   $('.callback__form_callback').submit(function (e) {
     var phone = $(this).find('.callback__input_phone');
     var errorFlag = false;
-    var data = $(this).serializeArray();
+    var data = $(this).serialize();
     var validatePhone = function () {
       if (phone.parent().hasClass('form-correct')) {
         return true;
@@ -200,7 +197,6 @@ function sendForm () {
       $.ajax({
         url: this.dataset.url,
         type: "post",
-        dataType: "json",
         data: data
       });
       // clean form after send
@@ -221,7 +217,7 @@ function sendForm () {
     var name = $(this).find('.contacts__input_name');
     var phone = $(this).find('.contacts__input_phone');
     var errorFlag = false;
-    var data = $(this).serializeArray();
+    var data = $(this).serialize();
     var validatePhone = function () {
       if (phone.parent().hasClass('form-correct')) {
         return true;
@@ -245,7 +241,6 @@ function sendForm () {
       $.ajax({
         url: this.dataset.url,
         type: "post",
-        dataType: "json",
         data: data
       });
       // clean form after send

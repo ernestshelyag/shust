@@ -27,7 +27,8 @@ $(function () {
 
 });
 
-$(function() {
-  var ass = $('#ourframe').contents().find('body').height();
-  console.log(ass);
-});
+// $(function() {
+//   var ass = $('#ourframe').contents().find('body').height();
+//   console.log(ass);
+// });
+
