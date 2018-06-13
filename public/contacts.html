@@ -257,12 +257,17 @@
           iconLayout: 'default#image',
           iconImageHref: '/img/mark.svg',
           iconImageSize: [90, 90],
-          iconImageOffset: [-3, -42],
+          iconImageOffset: [-45, 0],
           hintContent: '',
           balloonContent: ''
         });
       
         myMap.geoObjects.add(myPlacemark);
+      
+        myMap.balloon.open([el.latmark, el.lonmark], "г.Москва ул.Мясницкая,<br> дом 30/1/2, строение 1", {
+          // Опция: не показываем кнопку закрытия.
+          closeButton: false
+        });
       
         myMap.controls
           .remove('Button')
