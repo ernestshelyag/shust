@@ -2629,7 +2629,9 @@ p {
       .header-top__enter {
         font-size: 10px; }
     .about-session .therapy__cont {
-      background-size: cover; } }
+      background-size: cover; }
+  .ymaps-2-1-64-balloon {
+    display: none !important; } }
 
 @media only screen and (max-width: 920px) {
       .price__price-block {
