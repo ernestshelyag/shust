@@ -163,11 +163,7 @@ function sendForm () {
       name.parent().removeClass('.form-correct');
       phone.parent().removeClass('.form-correct');
       // - - - - -
-      $.magnificPopup.open({
-        items: {
-          src: '#success-popup'
-        }
-      });
+      modalSuccess();
     }
   });
 
@@ -203,11 +199,7 @@ function sendForm () {
       $('.callback__form_callback')[0].reset();
       phone.parent().removeClass('.form-correct');
       // - - - - -
-      $.magnificPopup.open({
-        items: {
-          src: '#success-popup'
-        }
-      });
+      modalSuccess();
     }
   });
 
@@ -248,12 +240,24 @@ function sendForm () {
       name.parent().removeClass('.form-correct');
       phone.parent().removeClass('.form-correct');
       // - - - - -
-      $.magnificPopup.open({
+      modalSuccess();
+    }
+  });
+
+  function modalSuccess () {
+    $.magnificPopup.open({
+      items: {
+        src: '#success-popup'
+      }
+    });
+    function fun() {
+      $.magnificPopup.close({
         items: {
           src: '#success-popup'
         }
       });
     }
-  });
+    setTimeout(fun, 2000);
+  }
 
 }
