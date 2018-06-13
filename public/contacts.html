@@ -132,7 +132,7 @@
         </h1>
       </div>
       <div class="contacts__map-block">
-        <div class="contacts__map" id="map" data-zoom="7" data-lat="59.931632" data-lon="30.336528" data-latmark="59.931551" data-lonmark="33.336528">
+        <div class="contacts__map" id="map" data-zoom="7" data-lat="59.931632" data-lon="30.336528" data-latmark="59.931551" data-lonmark="33.336528" data-balloon="г.Москва ул.Мясницкая,&lt;br&gt; дом 30/1/2, строение 1">
         </div>
         <div class="contacts__form-block wrp">
           <form class="contacts__form" data-url="/">
@@ -264,7 +264,7 @@
       
         myMap.geoObjects.add(myPlacemark);
       
-        myMap.balloon.open([el.latmark, el.lonmark], "г.Москва ул.Мясницкая,<br> дом 30/1/2, строение 1", {
+        myMap.balloon.open([el.latmark, el.lonmark], el.balloon, {
           // Опция: не показываем кнопку закрытия.
           closeButton: false
         });
