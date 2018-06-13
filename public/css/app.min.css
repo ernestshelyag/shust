@@ -916,6 +916,9 @@ p {
   .review-page__btn-load {
     margin: auto; }
 
+.single-article-callback {
+  margin: 60px 0; }
+
 .single-article {
   padding-top: 85px;
   margin-bottom: 85px; }
@@ -2533,6 +2536,8 @@ p {
       padding-bottom: 40px; }
       .review-page .review {
         padding: 40px 0 0 0; }
+    .single-article-callback {
+      margin: 30px 0; }
     .price {
       padding-top: 40px; }
       .price__text {
