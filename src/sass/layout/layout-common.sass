@@ -39,6 +39,8 @@
     +r(820)
       justify-content: flex-end
   &__item
+
+    white-space: normal
     &_address
       +r(1435)
         flex-grow: 1
@@ -56,6 +58,7 @@
   &__link
     display: flex
     text-decoration: none
+    white-space: normal
     svg
       fill: $font-col
       height: 33px
@@ -92,8 +95,11 @@
     +r(1435)
       padding-left: 0
     &_address
+      +r(1800)
+        width: 250px
       +r(1435)
         padding-left: 10px
+        width: auto
   &__title
     font-size: 12px
     text-transform: uppercase

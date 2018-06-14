@@ -23,4 +23,8 @@ $(function () {
 
   sendForm();
 
+  svg4everybody({
+    nosvg: true
+  });
+
 });
