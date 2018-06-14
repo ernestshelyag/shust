@@ -221,7 +221,8 @@ h5 {
   .breadcrumbs span {
     padding-right: 5px; }
 
-main {
+.main, .err404, .about, .about-session, .agreement, .articles-page, .contacts, .price, .privacy-policy, .questions, .review-page, .session, .single-article, .students, .video {
+  display: block;
   margin-top: 219px; }
 
 body {
@@ -663,7 +664,7 @@ p {
   height: 115px; }
 
 .logo-block {
-  width: 313px;
+  min-width: 313px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2689,7 +2690,7 @@ p {
     margin-top: 20px; } }
 
 @media only screen and (max-width: 880px) {
-    main {
+    .main, .err404, .about, .about-session, .agreement, .articles-page, .contacts, .price, .privacy-policy, .questions, .review-page, .session, .single-article, .students, .video {
       margin-top: 167px; }
       .header-top__nav-block {
         -webkit-box-pack: end;
@@ -2858,6 +2859,9 @@ p {
 @media only screen and (max-width: 662px) {
   .about .cells {
     display: block; }
+  .about .cells__item {
+    height: auto;
+    padding: 10px 20px 30px; }
     .cells {
       display: none; } }
 

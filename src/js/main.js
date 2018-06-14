@@ -23,12 +23,4 @@ $(function () {
 
   sendForm();
 
-  // select();
-
 });
-
-// $(function() {
-//   var ass = $('#ourframe').contents().find('body').height();
-//   console.log(ass);
-// });
-
