@@ -1446,10 +1446,10 @@ p {
     .agreement__pdf span {
       padding-left: 20px;
       font-size: 20px; }
+  .agreement__box {
+    overflow-x: scroll; }
   .agreement__content-block {
     margin: 40px 0;
-    min-width: 920px;
-    overflow-x: scroll;
     line-height: 1.5; }
     .agreement__content-block * {
       letter-spacing: normal; }
@@ -2635,6 +2635,10 @@ p {
   .ymaps-2-1-64-balloon {
     display: none !important; } }
 
+@media only screen and (max-width: 950px) {
+      .agreement__content-block {
+        width: 920px; } }
+
 @media only screen and (max-width: 920px) {
       .price__price-block {
         padding: 40px 0; }
@@ -3000,6 +3004,8 @@ p {
       width: 100%; }
       .questions h5 {
         font-size: 10px; }
+    .privacy-policy__title_small {
+      font-size: 18px; }
       .hero-slider__dots {
         top: auto;
         left: 0;

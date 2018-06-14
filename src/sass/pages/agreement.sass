@@ -15,16 +15,18 @@
     span
       padding-left: 20px
       font-size: 20px
+  &__box
+    overflow-x: scroll
 
   &__content-block
     margin: 40px 0
-    min-width: 920px
-    overflow-x: scroll
     line-height: 1.5
     *
       letter-spacing: normal
     li
       padding: 10px 0
+    +r(950)
+      width: 920px
 
 .agreement-form-block
   margin-top: 30px
