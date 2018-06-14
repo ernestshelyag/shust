@@ -216,8 +216,10 @@ h5 {
     text-decoration: none;
     font-weight: 500;
     cursor: pointer; }
+    .breadcrumbs a span {
+      padding-right: 0 !important; }
   .breadcrumbs span {
-    padding: 0 5px; }
+    padding-right: 5px; }
 
 main {
   margin-top: 219px; }
