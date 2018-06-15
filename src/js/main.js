@@ -23,8 +23,6 @@ $(function () {
 
   sendForm();
 
-  svg4everybody({
-    nosvg: true
-  });
+  svg4everybody();
 
 });
