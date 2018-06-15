@@ -36,4 +36,5 @@ function diplomSlider () {
       }
     ]
   });
+  $('.slick-track').lightGallery();
 }

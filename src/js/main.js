@@ -23,6 +23,20 @@ $(function () {
 
   sendForm();
 
-  svg4everybody();
-
+  imageWrapper();
 });
+
+
+function imageWrapper(){
+  $('.format li img').each(function(){
+    $(this).wrap('<div class="format__image"></div>');
+  });
+  $('.review__item img').each(function(){
+    $(this).wrap('<div class="review__image"></div>');
+  });
+
+  $('.work-with__item img').each(function(){
+    $(this).wrap('<div class="work-with__image"></div>');
+  });
+  
+}
