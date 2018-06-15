@@ -42,7 +42,7 @@ module.exports = function () {
       }))
       .pipe($.gp.sass())
       .pipe($.gp.postcss(processors))
-      // .pipe($.gp.csso())
+      .pipe($.gp.csso())
       .pipe($.gp.rename({ suffix: '.min' }))
       .pipe($.gulp.dest($.config.root + 'css/'));
   });
